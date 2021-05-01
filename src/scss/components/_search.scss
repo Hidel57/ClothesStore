@@ -1,0 +1,16 @@
+ .search {
+     display: flex;
+     align-items: center;
+     border: solid 1px;
+     border-radius: 8px;
+     height: 40px;
+     border-color: $primary-color;
+     padding-left: 16px;
+     padding-right: 8px;
+     color: $disabled-color;
+     
+     &-item {
+        border: none;
+        outline: none;
+     }
+ }

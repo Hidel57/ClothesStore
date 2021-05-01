@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/8.2.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.2.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.2.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/8.2.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/8.2.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body>
+    <header class="menu-top shadow-button cross-center" id="menuTop">
+      <div class="menu-top__row cross-center">
+        <h2>Moda<span class="primary-color">Girls</span></h1>
+        <div id="navb" class="nav tocenter">
+          <a href="#home" class="nav__item link link--actived left-space">Home</a>
+          <a href="#services" class="nav__item link left-space">Products</a>
+          <a href="#gallery" class="nav__item link left-space">Gallery</a>
+          <a href="#contacts" class="nav__item link left-space">Contacts</a>
+          <a href="#about" class="nav__item link left-space">About</a>
+        </div>
+        <div class="search toright flex-show">
+          <input type="text" placeholder="Buscar" class="search-item">
+          <span class="material-icons">search</span>
+        </div>
+        <a href="#" class="button button--refilled left-space flex-show toright1rem">Iniciar Sesión</a>
+        <a href="#" class="button button--outlined left-space flex-show toright1rem">Registrarse</a>
+        <div class="toright">
+          <span class="material-icons opacity noshow right-space">shopping_cart</span>
+          <span class="material-icons opacity noshow right-space">search</span>
+          <span id="hamburger" class="material-icons opacity noshow">menu</span>
+        </div>
+      </div>
+    </header>
+    <div class="navbar" id="nav">
+      <nav class="menunav">
+        <li class="menu--list"><a href="#home" class="headline6 demo-headline letter-spacing link link--actived">HOME</a></li>
+        <li class="menu--list"><a href="#services" class="headline6 demo-headline letter-spacing link">PRODUCTS</a></li>
+        <li class="menu--list"><a href="#gallery" class="headline6 demo-headline letter-spacing link">GALLERY</a></li>
+        <li class="menu--list"><a href="#contacts" class="headline6 demo-headline letter-spacing link">CONTACTS</a></li>
+        <li class="menu--list"><a href="#about" class="headline6 demo-headline letter-spacing link">ABOUT US</a></li>
+      </nav>
+      <!-- <aside class="drawer">
+        <div class="drawer__content">
+          <nav class="list">
+            <a href="#home" class="list-item list-item-activated link">Home</a>
+            <a href="#services" class="list-item link">Products</a>
+            <a href="#gallery" class="list-item link">Galery</a>
+            <a href="#contacts" class="list-item link">Contacts</a>
+            <a href="#about" class="list-item link">About</a>
+            <hr class="list-divider">
+            <h6 class="list-title">My count</h6>
+            <a href="#" class="list-item link">Close Session</a>
+          </nav>
+        </div>
+      </aside> -->
+    </div>
+
+    <div class="main-container" id="app"></div>
+    <!-- <p id="load">Firebase SDK Loading&hellip;</p> -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <h6 class="headline6 text-center">TITANS
+          <span class="primary-color">GYM</span>
+        </h6>
+        <p class="subtitle1 demo-subtitle">HORARIOS:</p>
+        <p class="text-body2 demo-text2">
+          LUNES - VIERNES: 05:00 a 21:00 <br>
+          SABADO: 08:00 a 20:00 <br>
+          DOMINGO: 08:00 a 14:00 <br>
+        </p>
+        <p class="subtitle1 demo-subtitle">TELEFONO:</p>
+        <p class="text-body2 demo-text2">75757575</p>
+        <p class="subtitle1 demo-subtitle">CORREO:</p>
+        <p class="text-body2 demo-text2">titans_gym@gmail.com.bo</p>
+        <p class="subtitle1 demo-subtitle">DIRECCION:</p>
+        <P class="text-body2 demo-text2">Calle Cabrera Esq Av. Fernanddo Alonzo</P>
+        <p class="subtitle1 demo-subtitle text-center primary-color">SUCRE - BOLIVIA</p>
+        <p class="text-body2 demo-text2 text-center">Author: Hidel Cayo <br>
+          <span class="caption text-center"><a href="hidel.com">StilesHidel.com</a></span>
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/route.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
+</html>

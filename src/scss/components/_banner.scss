@@ -1,0 +1,34 @@
+.banner {
+    padding: 5rem 1rem 6rem;
+    background-color: $black-color;
+    color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+    text-align: center;
+    position: relative;
+
+    &__hero-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: .3;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &-container {
+        position: relative;
+
+        &__title {
+            font-size: 3rem;
+            line-height: 4rem;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .banner {
+        padding: 11rem 1rem 12rem;
+    }
+}

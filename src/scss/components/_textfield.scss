@@ -1,0 +1,123 @@
+// standars
+.input {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: .009357em;
+    background: none;
+    width: 100%;
+    height: 100%;
+}
+
+.text-field {
+    background-color: $background-disabled-color;
+    height: 56px;
+    border-radius: 4px 4px 0 0;
+    position: relative;
+
+    &:hover {
+        background-color: $background-hover-color;
+    }
+    &__input {
+        height: 100%;
+        border-bottom: 1px solid;
+        border-bottom-color: $disabled-color;
+        padding: 16px 16px 6px;
+
+        &:hover {
+            border-bottom: 1px solid;
+        }
+
+        &:focus {
+            border-bottom: 2px solid;
+            border-bottom-color: $primary-color;
+        }
+    
+    }
+
+    &__label {
+        color: $text-disabled-color;
+        left: 16px;
+        right: auto;
+        position: absolute;
+        top: 40%;
+        font-weight: 400;
+        letter-spacing: 0.01em;
+        transition: .2s;
+        cursor: text;
+    }
+}
+
+.text-field__input:valid + .text-field__label {
+    color: $text-disabled-color;
+    font-size: .8rem;
+    top: 14%;
+}
+
+.text-field__input:focus + .text-field__label {
+    color: $primary-color;
+    font-size: .8rem;
+    top: 14%;
+}
+
+.text-field--outline {
+    position: relative;
+    height: 56px;
+
+    &__input {
+        border: 1px solid $disabled-color;
+        padding: 16px 16px;
+        border-radius: 4px;
+        &:hover {
+            border: 1px solid $hover-color;
+        }
+        &:focus {
+            border: 2px solid $primary-color;
+        }
+    }
+
+    &__label {
+        position: absolute;
+        color: $text-disabled-color;
+        left: 16px;
+        top: 32%;
+        transition: .2s;
+    }
+
+}
+
+
+.text-field--outline__input:valid + .text-field--outline__label {
+    font-size: 0.8rem;
+    top: -8px;
+    padding: 0 4px;
+    background-color: #fff;
+    color: $text-disabled-color;
+}
+
+.text-field--outline__input:focus + .text-field--outline__label {
+    font-size: 0.8rem;
+    top: -8px;
+    padding: 0 4px;
+    background-color: $background-color;
+    color: $primary-color;
+}
+
+.text-field--neumorphic {
+    height: 56px;
+    border-radius: 4px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+                inset -8px -8px 8px #fff;
+    &__input {
+        padding: 20px 16px;
+    }
+}
+
+// demos
+
+.demo-text-field {
+    display: inline-flex;
+    width: 227px;
+    margin: 8px 16px;
+}
