@@ -1,5 +1,5 @@
 .banner {
-    padding: 5rem 1rem 6rem;
+    padding: 6rem 1rem 7rem;
     background-color: $black-color;
     color: white;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
@@ -12,7 +12,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        opacity: .3;
+        opacity: .8;
         object-fit: cover;
         object-position: center;
     }
