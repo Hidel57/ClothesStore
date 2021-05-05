@@ -4,9 +4,6 @@
     background-color: #fff;
 }
 
-.card-container {
-    padding: 1rem;
-}
 .card-information {
     display: flex;
     flex-direction: column;
@@ -39,6 +36,7 @@
 
 .card__media {
     width: 100%;
+    height: min-content;
 }
 .card__media-content {
     position: absolute;
@@ -49,7 +47,7 @@
 }
 
 .card__primary {
-    padding: .75rem .5rem 0;
+    padding: .75rem 1rem 0;
 }
 .card__secondary {
     padding: 0 1rem;
@@ -57,13 +55,14 @@
     height: 40px;
     overflow: hidden;  
 }
-
-
+.card__promo {
+    padding: 2rem;
+}
 .card__actions {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0 .5rem .25rem;
+    padding: 0 1rem .25rem;
 }
 
 .card__actions-buttons, .card__actions-icons {
@@ -77,44 +76,19 @@
 .card__actions-icons {
     justify-content: flex-end;
 }
-.card__title {
-    margin: 0;
-}
-.card__subtitle {
-    margin: 0;
-    opacity: .55;
-}
 
 
 // demos 
 
 .demo-card-collection {
-    display: flex;
-    flex-direction: column;
+    margin-bottom: -1rem;
 }
-@media screen and (min-width: 768px) {
-    .demo-card-collection {
-        flex-direction: row;
-    }
-}
-
 .demo-card-prod {
-    margin: 0 1rem;
-}
-@media screen and (min-width: 768px) {
-    .demo-card-prod {
-        max-width: 240px;
-    }
+    margin-bottom: 1rem;
 }
 
 .demo-card__media-content {
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
-    padding: 1rem;
-}
-.demo-card__media-content-text {
-    color: white;
-    opacity: 1;
-    text-align: end;
 }

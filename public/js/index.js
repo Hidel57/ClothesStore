@@ -1,10 +1,58 @@
-function showNavbar (hamburguerId, navId) {
+function showNavbar (hamburguerId, navId, navClass) {
   const hamburguer = document.getElementById(hamburguerId)
   const nav = document.getElementById(navId)
 
   if (hamburguer && nav) {
     hamburguer.addEventListener('click', () => {
-      nav.classList.toggle('navshow')
+      nav.classList.toggle(navClass)
+    })
+  }
+}
+
+function componentClose (hamburguerId, navId, Removeclass) {
+  const close = document.getElementById(hamburguerId)
+  const search = document.getElementById(navId)
+
+  if (close && search) {
+    close.addEventListener('click', () => {
+      search.classList.remove(Removeclass)
+    })
+  }
+}
+
+function initAcordion () {
+  if (document.getElementsByClassName('accordion')) {
+    var accs = document.getElementsByClassName('accordion')
+    Array.prototype.forEach.call(accs, (el, i) => {
+      var acc = el
+      if (acc.classList.contains('active')) {
+        var panel = acc.nextElementSibling
+        if (window.getComputedStyle(panel).height === '0px') {
+          panel.style.height = panel.scrollHeight + 'px'
+          console.log('Hola')
+        } else {
+          panel.style.height = '0px'
+        }
+      }
+      acc.addEventListener('click', () => {
+        if (acc.classList.contains('active')) {
+          acc.classList.remove('active')
+          var panel = acc.nextElementSibling
+          if (window.getComputedStyle(panel).height === '0px') {
+            panel.style.height = panel.scrollHeight + 'px'
+          } else {
+            panel.style.height = '0px'
+          }
+        } else {
+          acc.classList.add('active')
+          var panel = acc.nextElementSibling
+          if (window.getComputedStyle(panel).height === '0px') {
+            panel.style.height = panel.scrollHeight + 'px'
+          } else {
+            panel.style.height = '0px'
+          }
+        }
+      })
     })
   }
 }
@@ -60,5 +108,8 @@ function closedNavbar (menuListClass, navId) {
   }
 }
 
-showNavbar('hamburger', 'nav')
+showNavbar('hamburger', 'nav', 'navshow')
+showNavbar('icon-search', 'search', 'search-show')
+componentClose('icon-close', 'search', 'search-show')
 closedNavbar('menu--list', 'nav')
+initAcordion()

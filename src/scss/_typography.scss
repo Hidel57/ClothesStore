@@ -1,6 +1,149 @@
+
+
+//sections typografy
+
+
+.section_title {
+    color: rgb(47,47,47);
+    font-family: 'Lucida', serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 2.25rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4.5rem;
+}
+@media screen and (min-width: 576px) {
+    .section_title {
+        font-size: 48px;
+        line-height: 72px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .section_title {
+        font-size: 60px;
+        line-height: 88px;
+    }
+}
+
+.subsection_title {
+    color: rgb(35,35,35);
+    font-family: 'Lucida', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+.subsection_subtitle {
+    color: rgb(147,124,111);
+    font-family: 'Lucida', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.section_subtitle {
+    color: rgb(147,124,111);
+    font-family: "Open Sans", sans-serif;
+    font-size: .75rem;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    line-height: 1.25rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+@media screen and (min-width: 576px) {
+    .section_subtitle {
+        font-size: .875rem;
+        line-height: 1.25rem;
+    }
+}
+
+
+//card typography
+
+
+.card__title {
+    color: rgb(35, 35, 35);
+    font-family: 'Lucida', serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.card__subtitle {
+    font-family: 'Lucida', serif;
+    font-size: .75rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 1rem;
+    opacity: .5;
+    text-align: center;
+}
+.card__promo-title {
+    color: #fff;
+    font-family: 'Lucida', serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+}
+.card__promo-subtitle {
+    color: #fff;
+    font-family: 'Lucida', serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    text-align: end;
+}
+.card__price {
+    color: $secondary-color;
+    font-family: 'Lucida', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    text-align: end;
+}
+
+
+// comentary tipography
+.comentary__text {
+    font-family: 'Lucida', serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    text-align: center;
+    opacity: .6;
+    padding: 0 1rem;
+}
+.comentary__user {
+    width: 100%;
+
+}
+.comentary__user-photo {
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 24px auto 8px; 
+}
+
+.comentary__user-name {
+    text-align: center;
+}
+
 .headline1 {
     font-size: 3.5rem;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: -1.5px;
 }
 
@@ -33,7 +176,7 @@
     font-weight: 500;
     opacity: 0.8;
     letter-spacing: -1.5px;
-    line-height: 1.25rem;
+    line-height: 1.5rem;
 }
 
 .headline6 {
@@ -58,11 +201,11 @@
 }
 
 .text-body1 {
-    font-size: .875rem;
+    font-size: 1rem;
     font-weight: 400;
     letter-spacing: normal;
     opacity: 0.7;
-    line-height: 1.25rem;
+    line-height: 1.5rem;
 }
 
 .text-body2 {
@@ -255,28 +398,4 @@
 }
 .letter-spacing3 {
     letter-spacing: 3px;
-}
-
-.comentary__text {
-    font-style: italic;
-    opacity: .6;
-    letter-spacing: 0px;
-    text-align: center;
-    line-height: 1.5rem;
-    font-weight: 400;
-}
-.comentary__user {
-    width: 100%;
-
-}
-.comentary__user-photo {
-    width: 86px;
-    height: 86px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 24px auto 8px; 
-}
-
-.comentary__user-name {
-    text-align: center;
 }

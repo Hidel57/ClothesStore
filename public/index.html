@@ -19,33 +19,44 @@
     <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
-    <header class="menu-top shadow-button cross-center" id="menuTop">
+    <header class="menu-top shadow-button" id="menuTop">
       <div class="menu-top__row cross-center">
-        <h2>Moda<span class="primary-color">Girls</span></h1>
+        <h2 >Moda<span class="primary-color">Girls</span></h1>
         <div id="navb" class="nav tocenter">
           <a href="#home" class="nav__item link link--actived left-space">Home</a>
-          <a href="#services" class="nav__item link left-space">Products</a>
+          <a href="#products" class="nav__item link left-space">Products</a>
           <a href="#gallery" class="nav__item link left-space">Gallery</a>
           <a href="#contacts" class="nav__item link left-space">Contacts</a>
           <a href="#about" class="nav__item link left-space">About</a>
         </div>
-        <div class="search toright flex-show">
+        <!-- <div class="search toright flex-show">
           <input type="text" placeholder="Buscar" class="search-item">
           <span class="material-icons">search</span>
-        </div>
+        </div> -->
         <a href="#" class="button button--refilled left-space flex-show toright1rem">Iniciar Sesión</a>
         <a href="#" class="button button--outlined left-space flex-show toright1rem">Registrarse</a>
         <div class="toright">
           <span class="material-icons opacity noshow right-space">shopping_cart</span>
-          <span class="material-icons opacity noshow right-space">search</span>
+            <span id="icon-search" class="material-icons opacity noshow right-space">search</span>
           <span id="hamburger" class="material-icons opacity noshow">menu</span>
         </div>
       </div>
     </header>
+    <!-- Components -->
+    <div id="search" class="search">
+      <div class="search-container">
+          <span class="material-icons opacity noshow right-space">arrow_back</span>          
+          <input class="search-field" placeholder="Search..." type="text">
+          <span id="icon-close" class="material-icons opacity left-space">close</span>          
+        </div>
+  </div>
+  
+    <!-- <div id="show-search" class="ls"></div> -->
+    
     <div class="navbar" id="nav">
       <nav class="menunav">
         <li class="menu--list"><a href="#home" class="headline6 demo-headline letter-spacing menu-link link link--actived">HOME</a></li>
-        <li class="menu--list"><a href="#services" class="headline6 demo-headline letter-spacing menu-link link">PRODUCTS</a></li>
+        <li class="menu--list"><a href="#products" class="headline6 demo-headline letter-spacing menu-link link">PRODUCTS</a></li>
         <li class="menu--list"><a href="#gallery" class="headline6 demo-headline letter-spacing menu-link link">GALLERY</a></li>
         <li class="menu--list"><a href="#contacts" class="headline6 demo-headline letter-spacing menu-link link">CONTACTS</a></li>
         <li class="menu--list"><a href="#about" class="headline6 demo-headline letter-spacing menu-link link">ABOUT US</a></li>
@@ -54,7 +65,7 @@
         <div class="drawer__content">
           <nav class="list">
             <a href="#home" class="list-item list-item-activated link">Home</a>
-            <a href="#services" class="list-item link">Products</a>
+            <a href="#products" class="list-item link">Products</a>
             <a href="#gallery" class="list-item link">Galery</a>
             <a href="#contacts" class="list-item link">Contacts</a>
             <a href="#about" class="list-item link">About</a>
@@ -66,7 +77,8 @@
       </aside> -->
     </div>
 
-    <div class="main-container" id="app"></div>
+    <div class="main-container" id="app">
+    </div>
     <!-- <p id="load">Firebase SDK Loading&hellip;</p> -->
 
     <footer class="footer">
@@ -97,6 +109,7 @@
     <script src="js/router.js"></script>
     <script src="js/route.js"></script>
     <script src="js/app.js"></script>
+    <script src="../src/js/ajax.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥

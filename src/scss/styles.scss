@@ -1,4 +1,8 @@
-$primary-color: #ff40b2;;
+$primary-color: #ff40b2;
+$secondary-color: #996A63;
+$tertiary-color: #CC331F;
+
+
 $black-color: #000;
 $white-color: #f2f2f2f2;
 $divider-color: #b6b6b6b6;
@@ -24,11 +28,11 @@ $border: 2px;
 }
 
 .left-space {
-    margin-left: 16px;
+    margin-left: .5rem;
 }
 
 .right-space {
-    margin-right: 16px;
+    margin-right: .5rem;
 }
 
 .max-width {
@@ -75,24 +79,11 @@ $border: 2px;
     opacity: .6;
 }
 
-.main-container {
-    padding-top: 56px;
-}
-
-@media screen and (min-width: 768px) {
-    .main-container {
-        padding-top: 72px;
-    }
-}
-
-.container {
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
 
 @import 'normalize';
 @import 'typography';
 @import 'layout';
+@import 'components/sections';
 @import 'components/textfield';
 @import 'components/button';
 @import 'components/search';
@@ -101,5 +92,51 @@ $border: 2px;
 @import 'components/tabbar';
 @import 'components/menu';
 @import 'components/card';
+@import 'components/faq';
 @import 'components/banner';
 @import 'components/footer';
+// -----
+@import 'components/radiobutton';
+
+
+.main-container {
+    padding: 56px 0;
+    overflow: auto;
+}
+
+/* Tamaño del scroll */
+.main-container::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+   /* Estilos barra (thumb) de scroll */
+  .main-container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+  }
+  
+  .main-container::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+  }
+  
+  .main-container::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+   /* Estilos track de scroll */
+  .main-container::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 4px;
+  }
+  
+  .main-container::-webkit-scrollbar-track:hover, 
+  .main-container::-webkit-scrollbar-track:active {
+    background: #d4d4d4;
+  }
+  
+@media screen and (min-width: 768px) {
+    .main-container {
+        padding-top: 72px;
+    }
+}

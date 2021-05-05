@@ -1,14 +1,4 @@
-.overlay{
-    position: fixed;
-    background-color: rgba($color: #000, $alpha: 0.5);
-    right: 0;
-    top: 56px;
-    bottom: 0;
-    left: 0;
-    z-index: 8;
-  }
-  
-  .navbar {
+.navbar {
     display: block;
     position: fixed;
     background-color: white;
@@ -92,13 +82,9 @@
 .nav {
     display: none;
 }
-.over-show {
-    display: block;
-}
+
 .flex-show {
     display: none;
-}
-.noshow {
 }
 
 @media screen and (min-width: 768px) {
@@ -136,10 +122,6 @@
 
 .navshow {
     right: 0;
-}
-
-.navclosed {
-    right: -100%;
 }
 
 .menunav {
