@@ -92,6 +92,28 @@
 .flex-show {
     display: none;
 }
+@media screen and (min-width: 992px) {
+    .flex-show {
+        display: flex;
+    }
+    .show {
+        display: block;
+    }
+    .noshow {
+        display: none;
+    }
+    .nav {
+        width: 100%;
+        display: flex;
+        max-width: 560px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .nav__item {
+        flex-grow: 1;
+        text-align: center;
+    }
+}
 
 @media screen and (min-width: 768px) {
     .menu{
@@ -104,28 +126,6 @@
 
     .navbar {
         top: 72px;
-    }
-    .flex-show {
-        display: flex;
-    }
-    .nav {
-        width: 100%;
-        display: flex;
-        max-width: 640px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .nav__item {
-        flex-grow: 1;
-        text-align: center;
-    }
-
-    .show {
-        display: block;
-    }
-
-    .noshow {
-        display: none;
     }
 }
 

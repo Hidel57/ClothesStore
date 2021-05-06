@@ -1,10 +1,11 @@
 .banner {
-    padding: 13.5rem 1rem 14.5rem;
-    background-color: $secondary-color;
+    background-color: #000;
     color: white;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
-    text-align: center;
+    padding-top:13.5rem;
+    padding-bottom: 14.5rem;
     position: relative;
+    text-align: center;
 
     &__hero-img {
         position: absolute;
@@ -12,28 +13,52 @@
         left: 0;
         width: 100%;
         height: 100%;
-        opacity: .8;
+        opacity: .5;
         object-fit: cover;
         object-position: center;
     }
 
-    &-container {
+    &-container__title {
         position: relative;
-        height: 128px;
+        height: max-content;
+        width: max-content;
         margin: auto;
-        background-color: $secondary-color;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-
-        &__title {
-            font-size: 3rem;
-            line-height: 4rem;
-        }
+        background-color: transparent;
+        padding: 1rem 2rem;
+    }
+    
+    &__title {
+        // font-family: 'Lucida', serif;
+        font-size: 3.5rem;
+        font-weight: 300;
+        line-height: 3.5rem;
+    }
+    &-container__subtitle {
+        position: relative;
+        height: max-content;
+        width: max-content;
+        margin: auto;
+        background-color: $primary-color;
+        padding: .5rem 1rem;
+    }
+    
+    &__subtitle {
+        // font-family: 'Lucida', serif;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
     }
 }
 
 @media screen and (min-width: 768px) {
     .banner {
-        padding: 11rem 1rem 12rem;
+        padding-top: 10rem;
+        padding-bottom: 12rem;
+        &__title {
+            font-size: 5.5rem;
+            line-height: 6rem;
+        }
     }
 }
