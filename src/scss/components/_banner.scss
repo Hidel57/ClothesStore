@@ -1,6 +1,6 @@
 .banner {
     padding: 13.5rem 1rem 14.5rem;
-    background-color: #FF4B33;
+    background-color: $secondary-color;
     color: white;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
     text-align: center;
@@ -21,7 +21,7 @@
         position: relative;
         height: 128px;
         margin: auto;
-        background-color: #E82E41;
+        background-color: $secondary-color;
         padding-top: 1rem;
         padding-bottom: 1rem;
 

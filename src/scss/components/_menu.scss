@@ -51,23 +51,30 @@
     }
   }
 
-.menu-top {
+.menu {
     display: flex;
+    background-color: #fff;
     flex-wrap: wrap;
     height: 56px; // 56px - 64px
-    width: 100%;
     min-width: 300px;
     position: fixed;
     z-index: 10;
-    background-color: #fff;
+    width: 100%;
 
     &__row {
         display: flex;
-        flex-wrap: wrap;    
-        width: calc(100% - 2rem);
-        margin-left: 1rem;
-        margin-right: 1rem;
-        row-gap: 1rem;
+        width: 100%;
+    }
+
+    &__group {
+        display: flex;
+        width: max-content;
+        &-actions {
+            justify-content: flex-end;
+        }
+        &-nav {
+            flex-grow: 1;
+        }
     }
 }
 
@@ -82,21 +89,15 @@
 .nav {
     display: none;
 }
-
 .flex-show {
     display: none;
 }
 
 @media screen and (min-width: 768px) {
-    .menu-top{
+    .menu{
         height: 72px;
     }
 
-    .menu-top__row {
-        max-width: 1200px;
-        margin-right: auto;
-        margin-left: auto;
-    }
     .overlay {
         top: 72px;
     }
@@ -108,7 +109,15 @@
         display: flex;
     }
     .nav {
+        width: 100%;
         display: flex;
+        max-width: 640px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .nav__item {
+        flex-grow: 1;
+        text-align: center;
     }
 
     .show {
