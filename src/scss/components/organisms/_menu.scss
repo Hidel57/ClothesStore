@@ -1,0 +1,56 @@
+.menu {
+    display: flex;
+    background-color: #fff;
+    flex-wrap: wrap;
+    height: 56px; // 56px - 64px
+    min-width: 300px;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);
+
+
+    &__row {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+
+    &__group {
+        display: flex;
+        width: max-content;
+
+        &-actions {
+            justify-content: flex-end;
+        }
+        &-navbar {
+            flex-grow: 1;
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .menu {
+        height: 72px;
+    }
+}
+
+.flex-show {
+    display: none;
+}
+.show {
+    display: none;
+}
+.noshow {
+    display: block;
+}
+@media screen and (min-width: 992px) {
+    .flex-show {
+        display: flex;
+    }
+    .show {
+        display: block;
+    }
+    .noshow {
+        display: none;
+    }
+}

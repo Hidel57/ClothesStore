@@ -1,5 +1,8 @@
+/* 
+    GRID SYSTEM
+*/
+
 .full-container {
-    // width: calc(100% - 1rem);
     width: 100%;
 }
 
@@ -10,9 +13,9 @@
     margin-right: auto;
     margin-left: auto;
 }
-@media screen and (min-width: 576px) {  //576px
+@media screen and (min-width: 576px) {
     .container {
-        max-width: 540px; //540px-544px  564px-568px
+        max-width: 540px;
     }
 }
 
@@ -157,30 +160,4 @@
         -ms-flex:0 0 100%;
         flex:0 0 100%;max-width:100%
     }
-}
-
-// --------------------------------------
-
-.box {
-    width: 100%;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
-.boxmin {
-    width: 100%;
-    padding-top: 4rem;
-    padding-bottom: 3rem;
-}
-.cross-center {
-    align-items: center;
-    align-content: center;
-}
-
-.list-items {
-    padding: 1rem;
-}
-
-.padding {
-    padding-left: 1rem;
-    padding-right: 1rem;
 }

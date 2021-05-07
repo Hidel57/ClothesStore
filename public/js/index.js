@@ -66,7 +66,7 @@ function closedNavbar (menuListClass, navId) {
   const nav = document.getElementById(navId)
   if (menuLink0 && nav) {
     menuLink0.addEventListener('click', () => {
-      nav.classList.remove('navshow')
+      nav.classList.remove('navbar-movil--show')
       menuLink0.children[0].classList.toggle('link--actived')
       menuLink1.children[0].classList.remove('link--actived')
       menuLink2.children[0].classList.remove('link--actived')
@@ -74,7 +74,7 @@ function closedNavbar (menuListClass, navId) {
       menuLink4.children[0].classList.remove('link--actived')
     })
     menuLink1.addEventListener('click', () => {
-      nav.classList.remove('navshow')
+      nav.classList.remove('navbar-movil--show')
       menuLink0.children[0].classList.remove('link--actived')
       menuLink1.children[0].classList.toggle('link--actived')
       menuLink2.children[0].classList.remove('link--actived')
@@ -82,7 +82,7 @@ function closedNavbar (menuListClass, navId) {
       menuLink4.children[0].classList.remove('link--actived')
     })
     menuLink2.addEventListener('click', () => {
-      nav.classList.remove('navshow')
+      nav.classList.remove('navbar-movil--show')
       menuLink0.children[0].classList.remove('link--actived')
       menuLink1.children[0].classList.remove('link--actived')
       menuLink2.children[0].classList.toggle('link--actived')
@@ -90,7 +90,7 @@ function closedNavbar (menuListClass, navId) {
       menuLink4.children[0].classList.remove('link--actived')
     })
     menuLink3.addEventListener('click', () => {
-      nav.classList.remove('navshow')
+      nav.classList.remove('navbar-movil--show')
       menuLink0.children[0].classList.remove('link--actived')
       menuLink1.children[0].classList.remove('link--actived')
       menuLink2.children[0].classList.remove('link--actived')
@@ -98,7 +98,7 @@ function closedNavbar (menuListClass, navId) {
       menuLink4.children[0].classList.remove('link--actived')
     })
     menuLink4.addEventListener('click', () => {
-      nav.classList.remove('navshow')
+      nav.classList.remove('navbar-movil--show')
       menuLink0.children[0].classList.remove('link--actived')
       menuLink1.children[0].classList.remove('link--actived')
       menuLink2.children[0].classList.remove('link--actived')
@@ -108,8 +108,8 @@ function closedNavbar (menuListClass, navId) {
   }
 }
 
-showNavbar('hamburger', 'nav', 'navshow')
+showNavbar('hamburger', 'nav', 'navbar-movil--show')
 showNavbar('icon-search', 'search', 'search-show')
 componentClose('icon-close', 'search', 'search-show')
-closedNavbar('menu--list', 'nav')
+closedNavbar('navbar-movil--list', 'nav')
 initAcordion()

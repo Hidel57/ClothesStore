@@ -3,7 +3,7 @@ export default function showNavbar (hamburguerId, navId) {
   const nav = document.getElementById(navId)
   if (hamburguer && nav) {
     hamburguer.addEventListener('click', () => {
-      nav.classList.toggle('navshow')
+      nav.classList.toggle('navbar-movil--show')
     })
   }
 }

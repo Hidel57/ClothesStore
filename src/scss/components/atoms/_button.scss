@@ -1,3 +1,20 @@
+/*
+    COMPONENT BUTTON
+
+    INDEX
+    * Props
+        - button__icon
+        - button__full
+    * Events
+        - button--disabled
+    * Objetos
+        - button--refilled
+        - button--outline
+        - button--neumorphic
+        - button--facebook
+*/
+
+
 .button {
     height: 40px;
     font-size: .875rem;
@@ -22,13 +39,25 @@
     &:hover {
         cursor: pointer;
     }
-
     &:active {
         background-color: rgba( $primary-color, 0.3);
+    }    
+    // &:active {
+    //     background-color: transparentize($color: $primary-color, $amount: 0.9);
+    // }
+    &__icon {
+        width: 24px;
+        padding-right: 1rem;
+    }
+    &__full {
+        width: 100%;
     }
 
-    &--outlined {
-        border: 1px solid $primary-color;
+    
+    &--disabled,
+    &[disabled] {
+        opacity: .5;
+        pointer-events: none;
     }
 
     &--refilled {
@@ -37,6 +66,11 @@
         &:hover {
             background-color: rgba($primary-color, .8);
         }
+    }
+
+    &--outlined {
+        border: 1px solid $primary-color;
+        background-color: transparent;
     }
 
     &--neumorphic {
@@ -48,24 +82,9 @@
                         inset -8px -8px 4px #fff;
         }
     }
-    
-    &__icon {
-        width: 24px;
-        padding-right: 1rem;
-    }
 
     &--facebook {
         color: #fff;
         background-color: #475993;
     }
-    &--ghost {
-        color: $primary-color;
-        background-color: transparent;
-        border: 2px solid $primary-color;
-    }
-}
-
-
-.demo-button {
-    margin: 8px 16px;
 }
