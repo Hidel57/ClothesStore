@@ -1,9 +1,6 @@
 .banner {
     background-color: #000;
     color: white;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
-    padding-top:13.5rem;
-    padding-bottom: 14.5rem;
     position: relative;
     text-align: center;
 
@@ -51,14 +48,48 @@
         text-transform: uppercase;
     }
 }
+@media screen and (min-width: 576px) {
+    .banner {
+        &__title {
+            font-size: 4rem;
+            line-height: 4rem;
+        }
+    }
+}
 
 @media screen and (min-width: 768px) {
     .banner {
-        padding-top: 10rem;
-        padding-bottom: 12rem;
         &__title {
             font-size: 5.5rem;
-            line-height: 6rem;
+            line-height: 5.5rem;
         }
+    }
+}
+
+
+
+/* DEMOS */
+
+.demo-banner {
+    padding-top:5em;
+    padding-bottom: 5rem;
+}
+@media screen and (min-width: 768px) {
+    .demo-banner {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+}
+
+.demo-banner-primary {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+    padding-top:13rem;
+    padding-bottom: 15rem;
+}
+
+@media screen and (min-width: 576px) {
+    .demo-banner-primary {
+        padding-top: 11rem;
+        padding-bottom: 13rem;
     }
 }

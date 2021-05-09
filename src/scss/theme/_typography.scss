@@ -117,14 +117,19 @@
 // comentary tipography
 .comentary__text {
     font-family: 'Lucida', serif;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-style: italic;
     font-weight: 400;
-    line-height: 2rem;
+    line-height: 1.5rem;
     letter-spacing: 1px;
     text-align: center;
     opacity: .6;
     padding: 0 1rem;
+}
+@media screen and (min-width: 768px) {
+    .comentary__text {
+        font-size: 1.5rem;
+    }
 }
 .comentary__user {
     width: 100%;

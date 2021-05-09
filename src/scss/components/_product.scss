@@ -56,10 +56,13 @@
     &__gallery {
         display: grid;
         grid-template-columns: 1fr;
+        padding-bottom: 2rem;
     }
     &__images {
         display: flex;
         flex-direction: row;
+        padding-top: 1rem;
+        justify-content: space-between;
     }
 }
 

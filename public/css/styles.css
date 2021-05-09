@@ -145,14 +145,18 @@ li {
 
 .comentary__text {
   font-family: 'Lucida', serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-style: italic;
   font-weight: 400;
-  line-height: 2rem;
+  line-height: 1.5rem;
   letter-spacing: 1px;
   text-align: center;
   opacity: .6;
   padding: 0 1rem; }
+
+@media screen and (min-width: 768px) {
+  .comentary__text {
+    font-size: 1.5rem; } }
 
 .comentary__user {
   width: 100%; }
@@ -368,17 +372,17 @@ li {
   margin-right: auto;
   margin-left: auto; }
 
-@media screen and (min-width: 576px) {
+@media (min-width: 576px) {
   .container {
-    max-width: 540px; } }
+    max-width: 544px; } }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .container {
-    max-width: 720px; } }
+    max-width: 736px; } }
 
 @media screen and (min-width: 992px) {
   .container {
-    max-width: 990px; } }
+    max-width: 960px; } }
 
 @media screen and (min-width: 1200px) {
   .container {
@@ -993,9 +997,6 @@ li {
 .banner {
   background-color: #000;
   color: white;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
-  padding-top: 13.5rem;
-  padding-bottom: 14.5rem;
   position: relative;
   text-align: center; }
   .banner__hero-img {
@@ -1032,13 +1033,35 @@ li {
     letter-spacing: 2px;
     text-transform: uppercase; }
 
+@media screen and (min-width: 576px) {
+  .banner__title {
+    font-size: 4rem;
+    line-height: 4rem; } }
+
 @media screen and (min-width: 768px) {
-  .banner {
-    padding-top: 10rem;
-    padding-bottom: 12rem; }
-    .banner__title {
-      font-size: 5.5rem;
-      line-height: 6rem; } }
+  .banner__title {
+    font-size: 5.5rem;
+    line-height: 5.5rem; } }
+
+/* DEMOS */
+.demo-banner {
+  padding-top: 5em;
+  padding-bottom: 5rem; }
+
+@media screen and (min-width: 768px) {
+  .demo-banner {
+    padding-top: 7rem;
+    padding-bottom: 7rem; } }
+
+.demo-banner-primary {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+  padding-top: 13rem;
+  padding-bottom: 15rem; }
+
+@media screen and (min-width: 576px) {
+  .demo-banner-primary {
+    padding-top: 11rem;
+    padding-bottom: 13rem; } }
 
 /*
     NAVBAR-MOVIL
@@ -1337,10 +1360,10 @@ li {
   color: #7a5656;
   cursor: pointer;
   font-family: 'Lucida', serif;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-style: italic;
   font-weight: 400;
-  line-height: 1.5rem;
+  line-height: 1rem;
   letter-spacing: 1px;
   opacity: .8;
   padding-left: 1.5rem;
@@ -1350,9 +1373,9 @@ li {
 
 .faq__answer {
   font-family: 'Lucida', serif;
-  font-size: 1rem;
+  font-size: .875rem;
   font-weight: 400;
-  line-height: 1.5rem;
+  line-height: 1.25rem;
   letter-spacing: 1px;
   opacity: .6;
   overflow: hidden;
@@ -1418,11 +1441,14 @@ li {
 
 .product__gallery {
   display: grid;
-  grid-template-columns: 1fr; }
+  grid-template-columns: 1fr;
+  padding-bottom: 2rem; }
 
 .product__images {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  padding-top: 1rem;
+  justify-content: space-between; }
 
 @media screen and (min-width: 768px) {
   .product__title {
