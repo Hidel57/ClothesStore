@@ -1,0 +1,94 @@
+.product {
+    &__title {
+        color: $primary-color;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 500;
+        letter-spacing: 2px;
+        line-height: 1.5rem;
+    }
+    &__subtitle {
+        color: $primary-color;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: 2px;
+        line-height: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    &__price {
+        margin-top: 1rem;
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: 9px;
+        color: $tertiary-color;
+    }
+    &__text {
+        margin-top: 2rem;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        color: $tertiary-color;
+        padding-bottom: 2rem;
+    }
+    &__size {
+        display: flex;
+        padding-bottom: 2rem;
+        &-label {
+            display: flex;
+            width: 48px;
+            height: 40px;
+            background-color: #fff;
+            border: solid 1px $primary-color;
+            cursor: pointer;
+            border-radius: 4px;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            margin-right: 1rem;
+        }
+        &-radio {
+            display: none;
+        }
+    }
+
+    &__gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    &__images {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .product {
+        &__title {
+            font-size: 2rem;
+            line-height: 2rem;
+        }
+        &__subtitle {
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.5rem;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .product {
+
+        &__gallery {
+            grid-template-columns: max-content 1fr;
+            grid-gap: 1rem;
+        }
+        &__images {
+            flex-direction: column;
+            max-width: max-content;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+    }
+}

@@ -56,22 +56,23 @@ $container-max :(
 /* components */
     /* atoms */
     @import 'components/atoms/textfield';
-    @import 'components/atoms/button';
-    @import 'components/atoms/icon-button';
-    @import 'components/atoms/radio-button';
+    @import 'components/atoms/btn';
+    @import 'components/atoms/icon-btn';
+    @import 'components/atoms/radio-btn';
     /* molecules */
     @import 'components/molecules/card';
     @import 'components/molecules/search';
     @import 'components/molecules/banner';
     @import 'components/molecules/navbar';
+    /* organisms */
+    @import 'components/organisms/tabbar';
+    @import 'components/organisms/drawer';
+    @import 'components/organisms/menu';
+    @import 'components/organisms/footer';
 
 @import 'components/sections';
-@import 'components/drawer';
-@import 'components/tabbar';
 @import 'components/faq';
-@import 'components/menu';
-@import 'components/footer';
-
+@import 'components/product';
 
 .main-container {
     padding-top: 56px;

@@ -1,8 +1,8 @@
 /*
-    ICON BUTTON
+    ICON 
 */
 
-.icon-button {
+.icon-btn {
     display: inline-block;
     position: relative;
     border: none;
@@ -22,7 +22,7 @@
     }
 }
 
-.icon-button::after, .icon-button::before {
+.icon-btn::after, .icon-btn::before {
     background-color: #000;
     position: absolute;
     border-radius: 50%;
@@ -36,10 +36,10 @@
     z-index: 1;
 }
 
-.icon-button:hover:before {
+.icon-btn:hover:before {
     opacity: .04;
 }
 
-.icon-button:focus:before {
+.icon-btn:focus:before {
     opacity: .12;
 }

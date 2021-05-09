@@ -67,43 +67,18 @@ function closedNavbar (menuListClass, navId) {
   if (menuLink0 && nav) {
     menuLink0.addEventListener('click', () => {
       nav.classList.remove('navbar-movil--show')
-      menuLink0.children[0].classList.toggle('link--actived')
-      menuLink1.children[0].classList.remove('link--actived')
-      menuLink2.children[0].classList.remove('link--actived')
-      menuLink3.children[0].classList.remove('link--actived')
-      menuLink4.children[0].classList.remove('link--actived')
     })
     menuLink1.addEventListener('click', () => {
       nav.classList.remove('navbar-movil--show')
-      menuLink0.children[0].classList.remove('link--actived')
-      menuLink1.children[0].classList.toggle('link--actived')
-      menuLink2.children[0].classList.remove('link--actived')
-      menuLink3.children[0].classList.remove('link--actived')
-      menuLink4.children[0].classList.remove('link--actived')
     })
     menuLink2.addEventListener('click', () => {
       nav.classList.remove('navbar-movil--show')
-      menuLink0.children[0].classList.remove('link--actived')
-      menuLink1.children[0].classList.remove('link--actived')
-      menuLink2.children[0].classList.toggle('link--actived')
-      menuLink3.children[0].classList.remove('link--actived')
-      menuLink4.children[0].classList.remove('link--actived')
     })
     menuLink3.addEventListener('click', () => {
       nav.classList.remove('navbar-movil--show')
-      menuLink0.children[0].classList.remove('link--actived')
-      menuLink1.children[0].classList.remove('link--actived')
-      menuLink2.children[0].classList.remove('link--actived')
-      menuLink3.children[0].classList.toggle('link--actived')
-      menuLink4.children[0].classList.remove('link--actived')
     })
     menuLink4.addEventListener('click', () => {
       nav.classList.remove('navbar-movil--show')
-      menuLink0.children[0].classList.remove('link--actived')
-      menuLink1.children[0].classList.remove('link--actived')
-      menuLink2.children[0].classList.remove('link--actived')
-      menuLink3.children[0].classList.remove('link--actived')
-      menuLink4.children[0].classList.toggle('link--actived')
     })
   }
 }
