@@ -22,6 +22,14 @@
 
         &-actions {
             justify-content: flex-end;
+            align-items: center;
+            &--items {
+                margin-left: 1rem;
+                
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
         }
         &-navbar {
             flex-grow: 1;

@@ -26,6 +26,7 @@
     font-family: 'Lucida', serif;
     font-size: .875rem;
     font-weight: 400;
+    height: 0px;
     line-height: 1.25rem;
     letter-spacing: 1px;
     opacity: .6;
@@ -37,6 +38,7 @@
 
 .faq__icon {
     color: $secondary-color;
+    font-size: 1rem;
     margin-left: -8px;
     opacity: 0.6;
     position: absolute;

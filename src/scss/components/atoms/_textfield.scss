@@ -76,10 +76,8 @@
 /*
     TEXT-FIELD-OUTLINE
 */
-
 .text-field--outline {
-    position: relative;
-    height: 56px;
+    position: relative; //56px demo
 
     &__input {
         border: 1px solid $disabled-color;
@@ -91,6 +89,9 @@
         }
         &:focus {
             border: 2px solid $primary-color;
+        }
+        &--textarea {
+            height: 7rem;
         }
     }
 
@@ -121,6 +122,26 @@
     background-color: #fff;
     color: $primary-color;
 }
+// .text-field--outline__input:invalid {
+//     border: 2px solid $error-color;
+
+.text-field-invalid > input:invalid {
+    border-color: $error-color;
+}
+.text-field-invalid > :empty {
+    border-color: $error-color;
+}
+
+.text-field-invalid > .text-field--outline__label  {
+    color: $error-color;
+    background-color: #fff;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    padding: 0 6px;
+    top: -8px;
+}
+
+
 
 /*
     TEXT-FIELD-NEUMORPHIC

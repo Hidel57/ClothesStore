@@ -29,7 +29,6 @@ function initAcordion () {
         var panel = acc.nextElementSibling
         if (window.getComputedStyle(panel).height === '0px') {
           panel.style.height = panel.scrollHeight + 'px'
-          console.log('Hola')
         } else {
           panel.style.height = '0px'
         }

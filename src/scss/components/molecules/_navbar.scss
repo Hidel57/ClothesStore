@@ -47,6 +47,11 @@
       }
     }
 }
+
+.navbar-link {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
 .navbar-movil--show {  // llamado por una funcion javascript para mostar navbar-movil
     right: 0;
 }

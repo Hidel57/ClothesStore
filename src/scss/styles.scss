@@ -3,6 +3,7 @@ $secondary-color: #7a5656;
 $tertiary-color: #7a7a7a;
 $quartary-color: #473232;
 $quintuary-color: #c7c7c7;
+$error-color: #d32f2f;
 
 $background-color: #ecf0f3;
 $background-activated-color: rgba($primary-color, .15);
@@ -30,16 +31,29 @@ $container-max :(
     color: $primary-color;
     font-weight: 500;
     opacity: .8;
-    &--actived {
-        color: $secondary-color;
-    }
+
     &:hover {
         color: $secondary-color;
     }
 }
+.link.link--actived {
+  opacity: .9;
+  color: $secondary-color;
+  border-bottom: 1px solid $quartary-color;
+}
+.link--actived::after, .link--actived::before {
+  position: absolute;
+  background-color: red;
+}
 
 .opacity {
     opacity: .6;
+}
+.form-items {
+  padding-bottom: 2rem;
+  &:last-child {
+    padding-bottom: 0;
+  }
 }
 
 /* base */
