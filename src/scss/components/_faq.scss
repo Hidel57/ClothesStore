@@ -43,3 +43,24 @@
     opacity: 0.6;
     position: absolute;
 }
+
+.contact-text {
+    font-family: 'Roboto', serif;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+    color: $primary-color;
+}
+.contact-icon {
+    position: relative;
+    color: $tertiary-color;
+    top: 6px;
+}
+
+.container-form {
+    margin-top: 5rem;
+    width: 100%;
+    background-color: $quintuary-color;
+    padding-bottom: 5rem;
+}

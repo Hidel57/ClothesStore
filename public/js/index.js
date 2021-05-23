@@ -83,7 +83,9 @@ function closedNavbar (menuListClass, navId) {
 }
 
 showNavbar('hamburger', 'nav', 'navbar-movil--show')
+showNavbar('icon_shopping', 'cart', 'cart--show')
 showNavbar('icon-search', 'search', 'search-show')
 componentClose('icon-close', 'search', 'search-show')
+componentClose('cart--close', 'cart', 'cart--show')
 closedNavbar('navbar-movil--list', 'nav')
 initAcordion()

@@ -7,17 +7,27 @@
     <meta name="keywords" content="Store, online, Sucre, Bolivia, clothes, shoes">
     <title>Eleganty | Venta de Ropa online en Sucre Bolivia</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+
+    <!--leaflet.js library-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <!--leaflet.js library END-->
   </head>
   <body>
-    <header class="menu" id="menuTop">
-      <div class="container menu__row">
-        <div class="menu__group">
-          <p>Eleganty</p>
+    <header class="menu">
+      <div class="container menu-container">
+        <div class="menu__logo">
+          <p>Elegancy</p>
         </div>
-        <div class="menu__group menu__group-navbar">
-          <nav id="navb" class="navbar">
+        <div class="menu__navbar">
+          <nav class="navbar">
             <div class="navbar__item"><a href="index.html" class="link">Home</a></div>
             <div class="navbar__item"><a href="products.html" class="link">Woman</a></div>
             <div class="navbar__item"><a href="gallery.html" class="link">Man</a></div>
@@ -25,16 +35,31 @@
             <div class="navbar__item"><a href="helpme.html" class="link">Information</a></div>
           </nav>
         </div>
-        <div class="menu__group menu__group-actions">
-          <div class="search toright flex-show">
-            <input type="text" placeholder="Buscar" class="search-item">
-            <span class="material-icons">search</span>
+        <div class="menu__icons">
+          <div class="menu__icons--item">
+            <span id="icon-search" class="icon material-icons-outlined">search
+            </span>
           </div>
-          <span class="material-icons opacity noshow right-space">shopping_bag</span>
-          <span id="icon-search" class="material-icons opacity noshow right-space">search</span>
-          <span id="hamburger" class="material-icons opacity noshow">menu</span>
-          <a href="#" class="btn btn--refilled left-space flex-show">Iniciar Sesión</a>
-          <a href="#" class="btn btn--outlined left-space flex-show">Registrarse</a>
+          <div class="menu__icons--item">
+            <div id="icon_shopping" class="icon material-icons-outlined">shopping_bag
+              <div class="icon_num_container">
+                <div class="icon_num_inner">
+                  <div class="icon_num">0</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu__buttons">
+          <div class="menu__buttons--item">
+            <a href="#" class="btn btn--refilled">Iniciar Sesión</a>
+          </div>
+          <div class="menu__buttons--item">
+            <a href="#" class="btn btn--outlined">Registrarse</a>
+          </div>
+        </div>
+        <div class="menu__burger burger-show">
+          <span id="hamburger" class="icon material-icons-outlined">menu</span>
         </div>
       </div>
     </header>
@@ -43,9 +68,9 @@
 
     <div id="search" class="search">
       <div class="search-container">
-          <span class="material-icons opacity noshow right-space">arrow_back</span>          
+          <span class="material-icons-outlined opacity noshow right-space">arrow_back</span>          
           <input class="search-field" placeholder="Search..." type="text">
-          <span id="icon-close" class="material-icons opacity left-space">close</span>          
+          <span id="icon-close" class="material-icons-outlined opacity left-space">close</span>          
         </div>
     </div>
 
@@ -78,64 +103,79 @@
         
       <div class="container">
           <div class="row">
-              <div class="col-md-6">
-                  <section class="section">
-                      <h2 class="section_title2">contact info</h2>
-                      <p class="text-body1 fw-500"><span class="material-icons">location_on</span> Calle Cabrera, No 57, Uyuni</p>
-                      <p class="text-body1 fw-500"><span class="material-icons">mail_outline</span> titans_gym@gmail.com</p>
-                      <p class="text-body1 fw-500"><span class="material-icons">phone</span> (+591)75726607</p>
-                      <h3 class="section_title3">Lorem ipsum dolor sit amet</h3>
-                      <p class="text-body1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla reiciendis asperiores eveniet iusto assumenda tempora, perspiciatis quibusdam minima voluptas libero qui pariatur mollitia nihil eaque molestiae tenetur itaque vel sapiente!</p>
-                  </section>
+              <div class="col-lg-6">
+                <section class="section">
+                  <div class="section-container">
+                    <!-- <h2 class="section_title2">contact info</h2> -->
+                    <p class="section-icon material-icons-outlined md-80">phone_in_talk</p>
+                    <h2 class="section_title3">Contact Info</h2>
+                    <p class="contact-text"><span class="material-icons-outlined contact-icon">location_on</span> Calle Cabrera, No 57, Uyuni</p>
+                    <p class="contact-text"><span class="material-icons-outlined contact-icon">mail_outline</span> titans_gym@gmail.com</p>
+                    <p class="contact-text"><span class="material-icons-outlined contact-icon">phone</span> (+591)75726607</p>
                   </div>
-              <div class="col-md-6">
+                </section>
+              </div>
+              <div class="col-lg-6">
                   <section class="section">
-                      <h2 class="section_title2">our store</h2>
-                      <img src="./img/store_about.jpg" alt="maps">
+                    <div id="mapid"></div>
                   </section>
               </div>
           </div>
-          <section class="section">
-              <h2 class="section_title2">get in touch</h2>
-              <form class="row form" method="POST">
-                  <div class="col-md-6">
-                      <div class="form-items">
-                          <div class='text-field--outline'>
-                              <input class='input text-field--outline__input' type='name' id='name' name='name' required />
-                              <label class='text-field--outline__label' htmlFor='name'>name</label>
-                          </div>
-                      </div>
+          <div class="row">
+            <div class="col-lg-6">
+                <section class="section">
+                  <div class="section-container">
+                    <!-- <h2 class="section_title2">our store</h2> -->
+                    <p class="section-icon material-icons-outlined md-80">storefront</p>
+                    <h2 class="section_title3">Our Store</h2>
+                    <p class="text-body1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla reiciendis asperiores eveniet iusto assumenda tempora, perspiciatis quibusdam minima voluptas libero qui pariatur mollitia nihil eaque molestiae tenetur itaque vel sapiente!</p>
                   </div>
-                  <div class="col-md-6">
-                      <div class="form-items">
-                          <div class='text-field--outline'>
-                              <input class='input text-field--outline__input' type='email' id='email' name='email' required />
-                              <label class='text-field--outline__label' htmlFor='email'>email</label>
-                          </div>
-                      </div>
+                </section>
+                </div>
+            <div class="col-lg-6">
+                <section class="section">
+                    <img src="./img/store_about.jpg" alt="maps">
+                </section>
+            </div>
+        </div>
+      </div>
+      <div class="container-form">
+        <section class="section container">
+            <h2 class="section_title2">get in touch</h2>
+            <form class="row form" method="POST">
+              <div class="col-md-6 form-items">
+                  <div class='text-field--outline'>
+                      <input class='input text-field--outline__input' type='name' id='name' name='name' required />
+                      <label class='text-field--outline__label' htmlFor='name'>name</label>
                   </div>
-                  <div class="col">
-                      <div class="form-items">
-                          <div class='text-field--outline'>
-                              <input class='input text-field--outline__input' type='text' id='subject' name='subject' required />
-                              <label class='text-field--outline__label' htmlFor='subject'>Subject</label>
-                          </div>
-                      </div>
-                      <div class="form-items">
-                          <div class='text-field--outline'>
-                              <textarea class='input text-field--outline__input text-field--outline__input--textarea' rows="4" id='text' name='text' required></textarea>
-                              <label class='text-field--outline__label' htmlFor='text'>text</label>
-                          </div>
-                      </div>
-                      <div class="form-items">
-                        <input type="submit" class="btn btn--refilled btn__full" value="Send Message">
-                      </div>
+              </div>
+              <div class="col-md-6 form-items">
+                  <div class='text-field--outline'>
+                      <input class='input text-field--outline__input' type='email' id='email' name='email' required />
+                      <label class='text-field--outline__label' htmlFor='email'>email</label>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="form-items">
+                    <div class='text-field--outline'>
+                        <input class='input text-field--outline__input' type='text' id='subject' name='subject' required />
+                        <label class='text-field--outline__label' htmlFor='subject'>Subject</label>
+                    </div>
+                  </div>
+                  <div class="form-items">
+                    <div class='text-field--outline'>
+                        <textarea class='input text-field--outline__input text-field--outline__input--textarea' rows="4" id='text' name='text' required></textarea>
+                        <label class='text-field--outline__label' htmlFor='text'>text</label>
+                    </div>
+                  </div>
+                  <div class="form-items">
+                    <input type="submit" class="btn btn--refilled btn__full" value="Send Message">
                   </div>
                 </div>
-              </form>
-          </section>
+              </div>
+            </form>
+        </section>
       </div>
-
     </div>
 
 
@@ -149,35 +189,35 @@
           <div class="col-sm-6 col-md-4 col-lg-3">
             <dl>
               <dt class="footer__title">Get in touch</dt>
-              <dd class="footer__link"><span class="material-icons">location_on</span> Calle Cabrera, No 57, Uyuni</dd>
-              <dd class="footer__link"><span class="material-icons">mail_outline</span> titans_gym@gmail.com</dd>
-              <dd class="footer__link"><span class="material-icons">phone</span> (+591)75726607</dd>
+              <dd class="footer__item"><span class="material-icons-outlined">location_on</span> Calle Cabrera, No 57, Uyuni</dd>
+              <dd class="footer__item"><span class="material-icons-outlined">mail_outline</span> titans_gym@gmail.com</dd>
+              <dd class="footer__item"><span class="material-icons-outlined">phone</span> (+591)75726607</dd>
             </dl>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
             <dl>
               <dt class="footer__title">Store Hours</dt>
-              <dd><a href="" class="footer__link">Monday - Friday : 8am - 8pm</a></dd>
-              <dd><a href="" class="footer__link">Saturday : 8am - 10pm</a></dd>
-              <dd><a href="" class="footer__link">Sunday: 8am - 11pm</a></dd>
+              <dd><a href="" class="footer__item">Monday - Friday : 8am - 8pm</a></dd>
+              <dd><a href="" class="footer__item">Saturday : 8am - 10pm</a></dd>
+              <dd><a href="" class="footer__item">Sunday: 8am - 11pm</a></dd>
             </dl>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
             <dl>
               <dt class="footer__title">Privacy Polity</dt>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor sit amet me</a></dd>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor sit amet</a></dd>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor sit</a></dd>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor sit amet</a></dd>
+              <dd><a href="" class="footer__item">Lorem ipsum dolor sit amet me</a></dd>
+              <dd><a href="" class="footer__item">Lorem ipsum dolor sit amet</a></dd>
+              <dd><a href="" class="footer__item">Lorem ipsum dolor sit</a></dd>
+              <dd><a href="" class="footer__item">Lorem ipsum dolor sit amet</a></dd>
             </dl>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
             <dl>
               <dt class="footer__title">Customer Service</dt>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor sit amet?</a></dd>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor sit </a></dd>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor sit amet</a></dd>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor amet?</a></dd>
+              <dd><a href="" class="footer__item">Lorem ipsum dolor sit amet?</a></dd>
+              <dd><a href="" class="footer__item">Lorem ipsum dolor sit </a></dd>
+              <dd><a href="" class="footer__item">Lorem ipsum dolor sit amet</a></dd>
+              <dd><a href="" class="footer__item">Lorem ipsum dolor amet?</a></dd>
             </dl>
           </div>
         </div>
@@ -185,9 +225,7 @@
     </footer>
     
     <script src="js/index.js"></script>
-    <script src="js/router.js"></script>
-    <script src="js/route.js"></script>
-    <script src="js/app.js"></script>
-    </script>
+    <script src="js/map.js"></script>
+
   </body>
 </html>

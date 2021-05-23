@@ -8,28 +8,19 @@
     <meta name="keywords" content="Tienda, online, Sucre, Bolivia, ropas">
     <link rel="canonical" href="https://hidel-styles.web.app/index.html">
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/8.2.0/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.2.0/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.2.0/firebase-database.js"></script>
-    <script defer src="/__/firebase/8.2.0/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/8.2.0/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
     <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
-    <header class="menu" id="menuTop">
-      <div class="container menu__row">
-        <div class="menu__group">
-          <p>Eleganty</p>
+    <header class="menu">
+      <div class="container menu-container">
+        <div class="menu__logo">
+          <p>Elegancy</p>
         </div>
-        <div class="menu__group menu__group-navbar">
-          <nav id="navb" class="navbar">
+        <div class="menu__navbar">
+          <nav class="navbar">
             <div class="navbar__item"><a href="index.html" class="link link--actived">Home</a></div>
             <div class="navbar__item"><a href="products.html" class="link">Woman</a></div>
             <div class="navbar__item"><a href="gallery.html" class="link">Man</a></div>
@@ -37,26 +28,31 @@
             <div class="navbar__item"><a href="helpme.html" class="link">Information</a></div>
           </nav>
         </div>
-        <div class="menu__group menu__group-actions">
-          <!-- <div class="search toright flex-show">
-            <input type="text" placeholder="Buscar" class="search-item">
-            <span class="material-icons">search</span>
-          </div> -->
-          <div class="menu__group-actions--items">
-            <span id="icon-search" class="material-icons">search</span>
+        <div class="menu__icons">
+          <div class="menu__icons--item">
+            <span id="icon-search" class="icon material-icons-outlined">search
+            </span>
           </div>
-          <div class="menu__group-actions--items">
-            <span class="material-icons">shopping_bag</span>
+          <div class="menu__icons--item">
+            <div id="icon_shopping" class="icon material-icons-outlined">shopping_bag
+              <div class="icon_num_container">
+                <div class="icon_num_inner">
+                  <div class="icon_num">0</div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="menu__group-actions--items noshow">
-            <span id="hamburger" class="material-icons">menu</span>
-          </div>
-          <div class="menu__group-actions--items flex-show">
+        </div>
+        <div class="menu__buttons">
+          <div class="menu__buttons--item">
             <a href="#" class="btn btn--refilled">Iniciar Sesión</a>
           </div>
-          <div class="menu__group-actions--items flex-show">
+          <div class="menu__buttons--item">
             <a href="#" class="btn btn--outlined">Registrarse</a>
           </div>
+        </div>
+        <div class="menu__burger burger-show">
+          <span id="hamburger" class="icon material-icons-outlined">menu</span>
         </div>
       </div>
     </header>
@@ -65,9 +61,9 @@
 
     <div id="search" class="search">
       <div class="search-container">
-          <span class="material-icons opacity right-space">arrow_back</span>          
+          <span class="material-icons-outlined opacity right-space">arrow_back</span>          
           <input class="search-field" placeholder="Search..." type="text">
-          <span id="icon-close" class="material-icons opacity left-space">close</span>          
+          <span id="icon-close" class="material-icons-outlined opacity left-space">close</span>          
         </div>
     </div>
 
@@ -80,6 +76,68 @@
         <li class="navbar-movil--list"><a href="helpme.html" class="navbar-link link">ABOUT US</a></li>
       </ul>
     </nav>
+
+    <div id="cart" class="cart">
+      <div class="container cart-container">
+        <div class="cart__header">
+            <h2 class="cart__title">Shopping Bag</h2>
+            <span id="cart--close" class="material-icons-outlined icon">close</span>
+        </div>
+        <div class="cart__content">
+          <div class="cart-item">
+            <div class="cart-item__img">
+              <img src="./img/product_1.jpg" alt="product_cart">
+            </div>
+            <div class="cart-item__content">
+              <div class="cart-item__header">
+                <div class="cart-item__info">
+                  <p class="cart-item__title">Woman jacket for snown station</p>
+                  <p class="cart-item__option">Size : M</p>
+                  <p class="cart-item__option">Color : Black</p>
+                  <p class="cart-item__option">Price : Bs. 130.00</p>
+                </div>
+              </div>
+              <div class="cart-item__details">
+                <div class="cart-item__quantity">
+                  <button class="cart-item__quantity__btn"><span class="material-icons-outlined md-18">remove</span></button>
+                  <p class="cart-item__quantity__label">1</p>
+                  <button class="cart-item__quantity__btn"><span class="material-icons-outlined md-18">add</span></button>
+                </div>
+                <a href="" class="link">Remove</a>  
+              </div>
+            </div>
+          </div>
+          <div class="cart-item">
+            <div class="cart-item__img">
+              <img src="./img/product_1.jpg" alt="product_cart">
+            </div>
+            <div class="cart-item__content">
+              <div class="cart-item__header">
+                <div class="cart-item__info">
+                  <p class="cart-item__title">Woman jacket for snown</p>
+                  <p class="cart-item__option">Size : M</p>
+                  <p class="cart-item__option">Color : Black</p>
+                  <p class="cart-item__option">Price : Bs. 130.00</p>
+                </div>
+              </div>
+              <div class="cart-item__details">
+                <div class="cart-item__quantity">
+                  <button class="cart-item__quantity__btn"><span class="material-icons-outlined md-18">remove</span></button>
+                  <p class="cart-item__quantity__label">1</p>
+                  <button class="cart-item__quantity__btn"><span class="material-icons-outlined md-18">add</span></button>
+                </div>
+                <a href="" class="link">Remove</a>  
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart__fotter">
+          <div class="cart__total"><span class="cart__total-text">Total:   </span>   Bs130.00</div>
+          <a href="#" class="btn btn--refilled btn__full"><span class="material-icons-outlined btn__icon">shopping_bag</span>Continue to Checkout</a>
+        </div>
+      </div>
+    </div>
+
 
     <!-- componentes close -->
 
@@ -129,7 +187,7 @@
                 </div>
                 <div class="card__actions">
                     <div class="card__actions-s">
-                      <a href="#" class="btn btn--refilled max-width"><span class="material-icons">shopping_bag</span> Shop Now</a>
+                      <a href="#" class="btn btn--refilled max-width"><span class="material-icons-outlined">shopping_bag</span> Shop Now</a>
                     </div>
                 </div>
               </div>
@@ -149,7 +207,7 @@
                 </div>
                 <div class="card__actions">
                     <div class="card__actions-s">
-                      <a href="#" class="btn btn--refilled max-width"><span class="material-icons">shopping_bag</span> Shop Now</a>
+                      <a href="#" class="btn btn--refilled max-width"><span class="material-icons-outlined">shopping_bag</span> Shop Now</a>
                     </div>
                 </div>
               </div>
@@ -169,7 +227,7 @@
                 </div>
                 <div class="card__actions">
                     <div class="card__actions-s">
-                      <a href="#" class="btn btn--refilled max-width"><span class="material-icons">shopping_bag</span> Shop Now</a>
+                      <a href="#" class="btn btn--refilled max-width"><span class="material-icons-outlined">shopping_bag</span> Shop Now</a>
                     </div>
                 </div>
               </div>
@@ -199,13 +257,13 @@
                       </div>
                       <div class="card__actions-icons">
                            <button class="icon-btn">
-                              <span class="material-icons">favorite_border</span>
+                              <span class="material-icons-outlined">favorite_border</span>
                            </button>
                            <button class="icon-btn">
-                              <span class="material-icons">shopping_bag</span>
+                              <span class="material-icons-outlined">shopping_bag</span>
                            </button>
                            <button class="icon-btn">
-                              <span class="material-icons">more_vert</span>
+                              <span class="material-icons-outlined">more_vert</span>
                            </button>
                       </div>
                   </div>
@@ -228,13 +286,13 @@
                       </div>
                       <div class="card__actions-icons">
                            <button class="icon-btn">
-                              <span class="material-icons">favorite_border</span>
+                              <span class="material-icons-outlined">favorite_border</span>
                            </button>
                            <button class="icon-btn">
-                              <span class="material-icons">shopping_bag</span>
+                              <span class="material-icons-outlined">shopping_bag</span>
                            </button>
                            <button class="icon-btn">
-                              <span class="material-icons">more_vert</span>
+                              <span class="material-icons-outlined">more_vert</span>
                            </button>
                       </div>
                   </div>
@@ -257,13 +315,13 @@
                       </div>
                       <div class="card__actions-icons">
                            <button class="icon-btn">
-                              <span class="material-icons">favorite_border</span>
+                              <span class="material-icons-outlined">favorite_border</span>
                            </button>
                            <button class="icon-btn">
-                              <span class="material-icons">shopping_bag</span>
+                              <span class="material-icons-outlined">shopping_bag</span>
                            </button>
                            <button class="icon-btn">
-                              <span class="material-icons">more_vert</span>
+                              <span class="material-icons-outlined">more_vert</span>
                            </button>
                       </div>
                   </div>
@@ -296,48 +354,46 @@
     <footer class="footer">
       <p class="section_title2">HStyles</p>
       <div class="container">
-        <div class="row">
+        <div class="row footer-row">
           <div class="col-sm-6 col-md-4 col-lg-3">
             <dl>
               <dt class="footer__title">Get in touch</dt>
-              <dd class="footer__link"><span class="material-icons">location_on</span> Calle Cabrera, No 57, Uyuni</dd>
-              <dd class="footer__link"><span class="material-icons">mail_outline</span> titans_gym@gmail.com</dd>
-              <dd class="footer__link"><span class="material-icons">phone</span> (+591)75726607</dd>
+              <dd class="footer__item"><span class="material-icons-outlined md-18 contact-icon">location_on</span> Calle Cabrera, No 57, Uyuni</dd>
+              <dd class="footer__item"><span class="material-icons-outlined md-18 contact-icon">mail_outline</span> titans_gym@gmail.com</dd>
+              <dd class="footer__item"><span class="material-icons-outlined md-18 contact-icon">phone</span> (+591)75726607</dd>
             </dl>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
             <dl>
-              <dt class="footer__title">Store Hours</dt>
-              <dd><a href="" class="footer__link">Monday - Friday : 8am - 8pm</a></dd>
-              <dd><a href="" class="footer__link">Saturday : 8am - 10pm</a></dd>
-              <dd><a href="" class="footer__link">Sunday: 8am - 11pm</a></dd>
+              <dt class="footer__title">We're available</dt>
+              <dd class="footer__item"><a href="">Monday - Friday : 8am - 8pm</a></dd>
+              <dd class="footer__item"><a href="">Saturday : 8am - 10pm</a></dd>
+              <dd class="footer__item"><a href="">Sunday: 8am - 11pm</a></dd>
             </dl>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
             <dl>
               <dt class="footer__title">Privacy Polity</dt>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor sit amet me</a></dd>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor sit amet</a></dd>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor sit</a></dd>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor sit amet</a></dd>
+              <dd class="footer__item"><a href="">Lorem ipsum dolor sit amet me</a></dd>
+              <dd class="footer__item"><a href="">Lorem ipsum dolor sit amet</a></dd>
+              <dd class="footer__item"><a href="">Lorem ipsum dolor sit</a></dd>
+              <dd class="footer__item"><a href="">Lorem ipsum dolor sit amet</a></dd>
             </dl>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
             <dl>
               <dt class="footer__title">Customer Service</dt>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor sit amet?</a></dd>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor sit </a></dd>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor sit amet</a></dd>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor amet?</a></dd>
+              <dd class="footer__item"><a href="">Lorem ipsum dolor sit amet?</a></dd>
+              <dd class="footer__item"><a href="">Lorem ipsum dolor sit </a></dd>
+              <dd class="footer__item"><a href="">Lorem ipsum dolor sit amet</a></dd>
+              <dd class="footer__item"><a href="">Lorem ipsum dolor amet?</a></dd>
             </dl>
           </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <dl>
-              <dt class="footer__title">Social Red</dt>
-              <dd><a href="https://www.facebook.com/" target="_blank" class="footer__link"><span class="material-icons">facebook</span> facebook</a></dd>
-              <dd><a href="https://www.facebook.com/" target="_blank" class="footer__link"><span class="material-icons">facebook</span> instagram</a></dd>
-              <dd><a href="https://www.facebook.com/" target="_blank" class="footer__link"><span class="material-icons">facebook</span> twitter</a></dd>
-
+          <div class="col-12">
+            <dl class="footer__social">
+              <dd class="footer__item"><a href="https://www.facebook.com/" target="_blank"><span class="material-icons-outlined md-36">facebook</span></a></dd>
+              <dd class="footer__item"><a href="https://www.facebook.com/" target="_blank"><span class="material-icons-outlined md-36">facebook</span></a></dd>
+              <dd class="footer__item"><a href="https://www.facebook.com/" target="_blank"><span class="material-icons-outlined md-36">facebook</span></a></dd>
             </dl>
           </div>
         </div>
@@ -346,28 +402,5 @@
     
     <script src="js/index.js"></script>
 
-    <!-- <p id="load">Firebase SDK Loading&hellip;</p> -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
   </body>
 </html>

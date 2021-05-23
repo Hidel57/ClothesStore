@@ -3,8 +3,14 @@
     NAVBAR-DESKTOP
 */
 
-// por modificar 
+
+// NAVBAR-MOVIL
+
 .navbar-movil {
+    @media screen and (min-width: 768px) {
+        top: 72px;
+    }
+    
     display: block;
     position: fixed;
     background-color: white;
@@ -56,27 +62,24 @@
     right: 0;
 }
 
-@media screen and (min-width: 768px) {
-    .navbar-movil {
-        top: 72px;
-    }
-}
+// NAVBAR-DESKTOP
 
 .navbar {
-    display: none;
-}
+    @media screen and (max-width: 992px) {
+        display: none;
+    }
 
-@media screen and (min-width: 992px) {
-    .navbar {
-        width: 100%;
-        display: flex;
-        max-width: 560px;
-        margin-right: auto;
-        margin-left: auto;
-        
-        &__item {
-            flex-grow: 1;
-            text-align: center;
-        }
+    width: 100%;
+    display: flex;
+    max-width: 560px;
+    margin-right: auto;
+    margin-left: auto;
+    
+    &__item {
+        flex-grow: 1;
+        font-size: .75rem;
+        letter-spacing: .2em;
+        text-align: center;
+        text-transform: uppercase;
     }
 }

@@ -6,46 +6,61 @@
     <meta name="description" content="En Eleganty encuentra variedad de ropas en las mejores marcas">
     <meta name="keywords" content="tienda, online, Sucre, Bolivia, ropas, venta">
     <title>Eleganty | las mejores ropas en marca - Sucre</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
-    <header class="menu" id="menuTop">
-      <div class="container menu__row">
-        <div class="menu__group">
-          <p>Eleganty</p>
-        </div>
-        <div class="menu__group menu__group-navbar">
-          <nav id="navb" class="navbar">
-            <div class="navbar__item"><a href="index.html" class="link">Home</a></div>
-            <div class="navbar__item"><a href="products.html" class="link link--actived">Woman</a></div>
-            <div class="navbar__item"><a href="gallery.html" class="link">Man</a></div>
-            <div class="navbar__item"><a href="contacts.html" class="link">Contacts</a></div>
-            <div class="navbar__item"><a href="helpme.html" class="link">Information</a></div>
-          </nav>
-        </div>
-        <div class="menu__group menu__group-actions">
-          <div class="search toright flex-show">
-            <input type="text" placeholder="Buscar" class="search-item">
-            <span class="material-icons">search</span>
+    <header class="menu">
+        <div class="container menu-container">
+          <div class="menu__logo">
+            <p>Elegancy</p>
           </div>
-          <span class="material-icons opacity noshow right-space">shopping_bag</span>
-          <span id="icon-search" class="material-icons opacity noshow right-space">search</span>
-          <span id="hamburger" class="material-icons opacity noshow">menu</span>
-          <a href="#" class="btn btn--refilled left-space flex-show">Iniciar Sesión</a>
-          <a href="#" class="btn btn--outlined left-space flex-show">Registrarse</a>
+          <div class="menu__navbar">
+            <nav class="navbar">
+              <div class="navbar__item"><a href="index.html" class="link">Home</a></div>
+              <div class="navbar__item"><a href="products.html" class="link link--actived">Woman</a></div>
+              <div class="navbar__item"><a href="gallery.html" class="link">Man</a></div>
+              <div class="navbar__item"><a href="contacts.html" class="link">Contacts</a></div>
+              <div class="navbar__item"><a href="helpme.html" class="link">Information</a></div>
+            </nav>
+          </div>
+          <div class="menu__icons">
+            <div class="menu__icons--item">
+              <span id="icon-search" class="icon material-icons-outlined">search
+              </span>
+            </div>
+            <div class="menu__icons--item">
+              <div id="icon_shopping" class="icon material-icons-outlined">shopping_bag
+                <div class="icon_num_container">
+                  <div class="icon_num_inner">
+                    <div class="icon_num">0</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu__buttons">
+            <div class="menu__buttons--item">
+              <a href="#" class="btn btn--refilled">Iniciar Sesión</a>
+            </div>
+            <div class="menu__buttons--item">
+              <a href="#" class="btn btn--outlined">Registrarse</a>
+            </div>
+          </div>
+          <div class="menu__burger burger-show">
+            <span id="hamburger" class="icon material-icons-outlined">menu</span>
+          </div>
         </div>
-      </div>
-    </header>
-
+      </header>
+  
     <!-- Components -->
 
     <div id="search" class="search">
       <div class="search-container">
-          <span class="material-icons opacity noshow right-space">arrow_back</span>          
+          <span class="material-icons-outlined opacity noshow right-space">arrow_back</span>          
           <input class="search-field" placeholder="Search..." type="text">
-          <span id="icon-close" class="material-icons opacity left-space">close</span>          
+          <span id="icon-close" class="material-icons-outlined opacity left-space">close</span>          
         </div>
     </div>
 
@@ -66,11 +81,11 @@
     <div class="main-container">
         <div class="toolbar-collection">
             <div class="toolbar__group">
-                <div class="toolbar__item">FILTER<span class="material-icons">expand_less</span></div>
+                <div class="toolbar__item">FILTER<span class="material-icons-outlined">expand_less</span></div>
             </div>
             <div class="toolbar__group-icon">
-                <div class="toolbar__item--icon"><span class="material-icons">crop_square</span></div>
-                <div class="toolbar__item--icon"><span class="material-icons">grid_view</span></div>
+                <div class="toolbar__item--icon"><span class="material-icons-outlined">crop_square</span></div>
+                <div class="toolbar__item--icon"><span class="material-icons-outlined">grid_view</span></div>
             </div>
         </div>
         <section class="section">
@@ -94,9 +109,9 @@
                                     <p class="card__price">Bs. 140.00</p>
                                 </div>
                                 <div class="card__actions-icons">
-                                     <button class="icon-btn material-icons" title="Favorite">favorite_border</>
-                                     <button class="icon-btn material-icons" title="Shopping">shopping_bag</>
-                                     <button class="icon-btn material-icons" title="More option">more_vert</>
+                                     <button class="icon-btn material-icons-outlined" title="Favorite">favorite_border</>
+                                     <button class="icon-btn material-icons-outlined" title="Shopping">shopping_bag</>
+                                     <button class="icon-btn material-icons-outlined" title="More option">more_vert</>
                                 </div>
                             </div>
                         </div>
@@ -118,13 +133,13 @@
                                 </div>
                                 <div class="card__actions-icons">
                                      <button class="icon-btn">
-                                        <span class="material-icons">favorite_border</span>
+                                        <span class="material-icons-outlined">favorite_border</span>
                                     </>
                                      <button class="icon-btn">
-                                        <span class="material-icons">shopping_bag</span>
+                                        <span class="material-icons-outlined">shopping_bag</span>
                                     </>
                                      <button class="icon-btn">
-                                        <span class="material-icons">more_vert</span>
+                                        <span class="material-icons-outlined">more_vert</span>
                                     </>
                                 </div>
                             </div>
@@ -147,13 +162,13 @@
                                 </div>
                                 <div class="card__actions-icons">
                                      <button class="icon-btn">
-                                        <span class="material-icons">favorite_border</span>
+                                        <span class="material-icons-outlined">favorite_border</span>
                                     </>
                                      <button class="icon-btn">
-                                        <span class="material-icons">shopping_bag</span>
+                                        <span class="material-icons-outlined">shopping_bag</span>
                                     </>
                                      <button class="icon-btn">
-                                        <span class="material-icons">more_vert</span>
+                                        <span class="material-icons-outlined">more_vert</span>
                                     </>
                                 </div>
                             </div>
@@ -176,13 +191,13 @@
                                 </div>
                                 <div class="card__actions-icons">
                                      <button class="icon-btn">
-                                        <span class="material-icons">favorite_border</span>
+                                        <span class="material-icons-outlined">favorite_border</span>
                                     </>
                                      <button class="icon-btn">
-                                        <span class="material-icons">shopping_bag</span>
+                                        <span class="material-icons-outlined">shopping_bag</span>
                                     </>
                                      <button class="icon-btn">
-                                        <span class="material-icons">more_vert</span>
+                                        <span class="material-icons-outlined">more_vert</span>
                                     </>
                                 </div>
                             </div>
@@ -205,13 +220,13 @@
                                 </div>
                                 <div class="card__actions-icons">
                                      <button class="icon-btn">
-                                        <span class="material-icons">favorite_border</span>
+                                        <span class="material-icons-outlined">favorite_border</span>
                                     </>
                                      <button class="icon-btn">
-                                        <span class="material-icons">shopping_bag</span>
+                                        <span class="material-icons-outlined">shopping_bag</span>
                                     </>
                                      <button class="icon-btn">
-                                        <span class="material-icons">more_vert</span>
+                                        <span class="material-icons-outlined">more_vert</span>
                                     </>
                                 </div>
                             </div>
@@ -234,13 +249,13 @@
                                 </div>
                                 <div class="card__actions-icons">
                                      <button class="icon-btn">
-                                        <span class="material-icons">favorite_border</span>
+                                        <span class="material-icons-outlined">favorite_border</span>
                                     </>
                                      <button class="icon-btn">
-                                        <span class="material-icons">shopping_bag</span>
+                                        <span class="material-icons-outlined">shopping_bag</span>
                                     </>
                                      <button class="icon-btn">
-                                        <span class="material-icons">more_vert</span>
+                                        <span class="material-icons-outlined">more_vert</span>
                                     </>
                                 </div>
                             </div>
@@ -263,13 +278,13 @@
                                 </div>
                                 <div class="card__actions-icons">
                                      <button class="icon-btn">
-                                        <span class="material-icons">favorite_border</span>
+                                        <span class="material-icons-outlined">favorite_border</span>
                                     </>
                                      <button class="icon-btn">
-                                        <span class="material-icons">shopping_bag</span>
+                                        <span class="material-icons-outlined">shopping_bag</span>
                                     </>
                                      <button class="icon-btn">
-                                        <span class="material-icons">more_vert</span>
+                                        <span class="material-icons-outlined">more_vert</span>
                                     </>
                                 </div>
                             </div>
@@ -292,13 +307,13 @@
                                 </div>
                                 <div class="card__actions-icons">
                                      <button class="icon-btn">
-                                        <span class="material-icons">favorite_border</span>
+                                        <span class="material-icons-outlined">favorite_border</span>
                                     </>
                                      <button class="icon-btn">
-                                        <span class="material-icons">shopping_bag</span>
+                                        <span class="material-icons-outlined">shopping_bag</span>
                                     </>
                                      <button class="icon-btn">
-                                        <span class="material-icons">more_vert</span>
+                                        <span class="material-icons-outlined">more_vert</span>
                                     </>
                                 </div>
                             </div>
@@ -320,15 +335,15 @@
                                     <p class="card__price">Bs. 140.00</p>
                                 </div>
                                 <div class="card__actions-icons">
-                                     <button class="icon-btn">
-                                        <span class="material-icons">favorite_border</span>
-                                    </>
-                                     <button class="icon-btn">
-                                        <span class="material-icons">shopping_bag</span>
-                                    </>
-                                     <button class="icon-btn">
-                                        <span class="material-icons">more_vert</span>
-                                    </>
+                                    <button class="icon-btn">
+                                        <span class="material-icons-outlined">favorite_border</span>
+                                    </button>
+                                    <button class="icon-btn">
+                                        <span class="material-icons-outlined">shopping_bag</span>
+                                    </button>
+                                    <button class="icon-btn">
+                                        <span class="material-icons-outlined">more_vert</span>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -349,35 +364,35 @@
           <div class="col-sm-6 col-md-4 col-lg-3">
             <dl>
               <dt class="footer__title">Get in touch</dt>
-              <dd class="footer__link"><span class="material-icons">location_on</span> Calle Cabrera, No 57, Uyuni</dd>
-              <dd class="footer__link"><span class="material-icons">mail_outline</span> titans_gym@gmail.com</dd>
-              <dd class="footer__link"><span class="material-icons">phone</span> (+591)75726607</dd>
+              <dd class="footer__item"><span class="material-icons-outlined">location_on</span> Calle Cabrera, No 57, Uyuni</dd>
+              <dd class="footer__item"><span class="material-icons-outlined">mail_outline</span> titans_gym@gmail.com</dd>
+              <dd class="footer__item"><span class="material-icons-outlined">phone</span> (+591)75726607</dd>
             </dl>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
             <dl>
               <dt class="footer__title">Store Hours</dt>
-              <dd><a href="" class="footer__link">Monday - Friday : 8am - 8pm</a></dd>
-              <dd><a href="" class="footer__link">Saturday : 8am - 10pm</a></dd>
-              <dd><a href="" class="footer__link">Sunday: 8am - 11pm</a></dd>
+              <dd><a href="" class="footer__item">Monday - Friday : 8am - 8pm</a></dd>
+              <dd><a href="" class="footer__item">Saturday : 8am - 10pm</a></dd>
+              <dd><a href="" class="footer__item">Sunday: 8am - 11pm</a></dd>
             </dl>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
             <dl>
               <dt class="footer__title">Privacy Polity</dt>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor sit amet me</a></dd>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor sit amet</a></dd>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor sit</a></dd>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor sit amet</a></dd>
+              <dd><a href="" class="footer__item">Lorem ipsum dolor sit amet me</a></dd>
+              <dd><a href="" class="footer__item">Lorem ipsum dolor sit amet</a></dd>
+              <dd><a href="" class="footer__item">Lorem ipsum dolor sit</a></dd>
+              <dd><a href="" class="footer__item">Lorem ipsum dolor sit amet</a></dd>
             </dl>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
             <dl>
               <dt class="footer__title">Customer Service</dt>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor sit amet?</a></dd>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor sit </a></dd>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor sit amet</a></dd>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor amet?</a></dd>
+              <dd><a href="" class="footer__item">Lorem ipsum dolor sit amet?</a></dd>
+              <dd><a href="" class="footer__item">Lorem ipsum dolor sit </a></dd>
+              <dd><a href="" class="footer__item">Lorem ipsum dolor sit amet</a></dd>
+              <dd><a href="" class="footer__item">Lorem ipsum dolor amet?</a></dd>
             </dl>
           </div>
         </div>
@@ -385,9 +400,6 @@
     </footer>
     
     <script src="js/index.js"></script>
-    <script src="js/router.js"></script>
-    <script src="js/route.js"></script>
-    <script src="js/app.js"></script>
-    </script>
+
   </body>
 </html>

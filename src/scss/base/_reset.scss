@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: 'Roboto', serif;
+    font-family: 'Open Sans', serif;
 }
 
 input{ 
@@ -30,9 +30,13 @@ img {
 
 a {
     text-decoration: none;
-    color: black;
+    color:inherit;
 }
 
 li {
     list-style: none;
+}
+
+fieldset {
+    border: none;
 }

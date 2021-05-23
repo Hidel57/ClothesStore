@@ -6,18 +6,18 @@
     <meta name="description" content="Eleganty,consulta tus dudas aqui y obten la informacion que te proporcionamos">
     <meta name="keywords" content="Eleganty, Sucre, Bolivia, dudas, informacion">
     <title>Eleganty | Centro de ayuda</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
-    <header class="menu" id="menuTop">
-      <div class="container menu__row">
-        <div class="menu__group">
-          <p>Eleganty</p>
+    <header class="menu">
+      <div class="container menu-container">
+        <div class="menu__logo">
+          <p>Elegancy</p>
         </div>
-        <div class="menu__group menu__group-navbar">
-          <nav id="navb" class="navbar">
+        <div class="menu__navbar">
+          <nav class="navbar">
             <div class="navbar__item"><a href="index.html" class="link">Home</a></div>
             <div class="navbar__item"><a href="products.html" class="link">Woman</a></div>
             <div class="navbar__item"><a href="gallery.html" class="link">Man</a></div>
@@ -25,16 +25,31 @@
             <div class="navbar__item"><a href="helpme.html" class="link link--actived">Information</a></div>
           </nav>
         </div>
-        <div class="menu__group menu__group-actions">
-          <div class="search toright flex-show">
-            <input type="text" placeholder="Buscar" class="search-item">
-            <span class="material-icons">search</span>
+        <div class="menu__icons">
+          <div class="menu__icons--item">
+            <span id="icon-search" class="icon material-icons-outlined">search
+            </span>
           </div>
-          <span class="material-icons opacity noshow right-space">shopping_bag</span>
-          <span id="icon-search" class="material-icons opacity noshow right-space">search</span>
-          <span id="hamburger" class="material-icons opacity noshow">menu</span>
-          <a href="#" class="btn btn--refilled left-space flex-show">Iniciar Sesión</a>
-          <a href="#" class="btn btn--outlined left-space flex-show">Registrarse</a>
+          <div class="menu__icons--item">
+            <div id="icon_shopping" class="icon material-icons-outlined">shopping_bag
+              <div class="icon_num_container">
+                <div class="icon_num_inner">
+                  <div class="icon_num">0</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu__buttons">
+          <div class="menu__buttons--item">
+            <a href="#" class="btn btn--refilled">Iniciar Sesión</a>
+          </div>
+          <div class="menu__buttons--item">
+            <a href="#" class="btn btn--outlined">Registrarse</a>
+          </div>
+        </div>
+        <div class="menu__burger burger-show">
+          <span id="hamburger" class="icon material-icons-outlined">menu</span>
         </div>
       </div>
     </header>
@@ -43,9 +58,9 @@
 
     <div id="search" class="search">
       <div class="search-container">
-          <span class="material-icons opacity noshow right-space">arrow_back</span>          
+          <span class="material-icons-outlined opacity noshow right-space">arrow_back</span>          
           <input class="search-field" placeholder="Search..." type="text">
-          <span id="icon-close" class="material-icons opacity left-space">close</span>          
+          <span id="icon-close" class="material-icons-outlined opacity left-space">close</span>          
         </div>
     </div>
 
@@ -74,88 +89,95 @@
       </div>
 
       <!--BANNER-->
-      <div class="section">
-        <h2 class="section_title2">frecuently Asked Questions</h2>
+
       <div class="container">
-        <div class="row">
-          <div class="col col-lg-6">
-            <div class="faq">
-              <h3 class="section_title3">Return and exchange</h3>
-              <div class="faq__item">
-                  <span class="material-icons faq__icon">keyboard_arrow_right</span>
-                  <h4 class="accordion faq__question">How do I return a gift?</h4>
-                  <p class="faq__answer" aria-hidden="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi exercitationem quia, distinctio eaque dolorem tenetur reiciendis quasi, natus magni quis suscipit nobis quidem placeat architecto culpa harum alias consequuntur animi.</p>
+        <section class="section">
+          <h2 class="section_title2">frecuently Asked Questions</h2>
+          <div class="row">
+            <div class="col col-md-7">
+              <div class="faq">
+                <h3 class="section_title3">return and exchange</h3>
+                <div class="faq__item">
+                    <span class="material-icons-outlined faq__icon">keyboard_arrow_right</span>
+                    <h4 class="accordion faq__question">How do I return a gift?</h4>
+                    <p class="faq__answer" aria-hidden="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi exercitationem quia, distinctio eaque dolorem tenetur reiciendis quasi, natus magni quis suscipit nobis quidem placeat architecto culpa harum alias consequuntur animi.</p>
+                </div>
+                <div class="faq__item">
+                    <span class="material-icons-outlined faq__icon">keyboard_arrow_right</span>
+                    <h4 class="accordion faq__question">Can I exchange my item for a different size?</h4>
+                    <p class="faq__answer" aria-hidden="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi exercitationem quia, distinctio eaque dolorem tenetur reiciendis quasi, natus magni quis suscipit nobis quidem placeat architecto culpa harum alias consequuntur animi.</p>
+                </div>
+                <div class="faq__item">
+                    <span class="material-icons-outlined faq__icon">keyboard_arrow_right</span>
+                    <h4 class="accordion faq__question">What is your return policy?</h4>
+                    <p class="faq__answer" aria-hidden="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi exercitationem quia, distinctio eaque dolorem tenetur reiciendis quasi, natus magni quis suscipit nobis quidem placeat architecto culpa harum alias consequuntur animi.</p>
+                </div>
               </div>
-              <div class="faq__item">
-                  <span class="material-icons faq__icon">keyboard_arrow_right</span>
-                  <h4 class="accordion faq__question">Can I exchange my item for a different size?</h4>
-                  <p class="faq__answer" aria-hidden="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi exercitationem quia, distinctio eaque dolorem tenetur reiciendis quasi, natus magni quis suscipit nobis quidem placeat architecto culpa harum alias consequuntur animi.</p>
-              </div>
-              <div class="faq__item">
-                  <span class="material-icons faq__icon">keyboard_arrow_right</span>
-                  <h4 class="accordion faq__question">What is your return policy?</h4>
-                  <p class="faq__answer" aria-hidden="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi exercitationem quia, distinctio eaque dolorem tenetur reiciendis quasi, natus magni quis suscipit nobis quidem placeat architecto culpa harum alias consequuntur animi.</p>
-              </div>
-          </div>
-          <div class="faq">
-              <h3 class="section_title3">Shipping</h3>
-              <div class="faq__item">
-                  <span class="material-icons faq__icon">keyboard_arrow_right</span>
-                  <h4 class="accordion faq__question">What countries or regions do you ship to?</h4>
-                  <p class="faq__answer" aria-hidden="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi exercitationem quia, distinctio eaque dolorem tenetur reiciendis quasi, natus magni quis suscipit nobis quidem placeat architecto culpa harum alias consequuntur animi.</p>
-              </div>
-              <div class="faq__item">
-                  <span class="material-icons faq__icon">keyboard_arrow_right</span>
-                  <h4 class="accordion faq__question">How long will it take to get my order?</h4>
-                  <p class="faq__answer" aria-hidden="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi exercitationem quia, distinctio eaque dolorem tenetur reiciendis quasi, natus magni quis suscipit nobis quidem placeat architecto culpa harum alias consequuntur animi.</p>
-              </div>
-              <div class="faq__item">
-                  <span class="material-icons faq__icon">keyboard_arrow_right</span>
-                  <h4 class="accordion faq__question">How do I track my order?</h4>
-                  <p class="faq__answer" aria-hidden="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi exercitationem quia, distinctio eaque dolorem tenetur reiciendis quasi, natus magni quis suscipit nobis quidem placeat architecto culpa harum alias consequuntur animi.</p>
-              </div>
-              <div class="faq__item">
-                  <span class="material-icons faq__icon">keyboard_arrow_right</span>
-                  <h4 class="accordion faq__question">Are there additional fees on shipments?</h4>
-                  <p class="faq__answer" aria-hidden="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi exercitationem quia, distinctio eaque dolorem tenetur reiciendis quasi, natus magni quis suscipit nobis quidem placeat architecto culpa harum alias consequuntur animi.</p>
+              <div class="faq">
+                <h3 class="section_title3">Shipping</h3>
+                <div class="faq__item">
+                    <span class="material-icons-outlined faq__icon">keyboard_arrow_right</span>
+                    <h4 class="accordion faq__question">What countries or regions do you ship to?</h4>
+                    <p class="faq__answer" aria-hidden="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi exercitationem quia, distinctio eaque dolorem tenetur reiciendis quasi, natus magni quis suscipit nobis quidem placeat architecto culpa harum alias consequuntur animi.</p>
+                </div>
+                <div class="faq__item">
+                    <span class="material-icons-outlined faq__icon">keyboard_arrow_right</span>
+                    <h4 class="accordion faq__question">How long will it take to get my order?</h4>
+                    <p class="faq__answer" aria-hidden="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi exercitationem quia, distinctio eaque dolorem tenetur reiciendis quasi, natus magni quis suscipit nobis quidem placeat architecto culpa harum alias consequuntur animi.</p>
+                </div>
+                <div class="faq__item">
+                    <span class="material-icons-outlined faq__icon">keyboard_arrow_right</span>
+                    <h4 class="accordion faq__question">How do I track my order?</h4>
+                    <p class="faq__answer" aria-hidden="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi exercitationem quia, distinctio eaque dolorem tenetur reiciendis quasi, natus magni quis suscipit nobis quidem placeat architecto culpa harum alias consequuntur animi.</p>
+                </div>
+                <div class="faq__item">
+                    <span class="material-icons-outlined faq__icon">keyboard_arrow_right</span>
+                    <h4 class="accordion faq__question">Are there additional fees on shipments?</h4>
+                    <p class="faq__answer" aria-hidden="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi exercitationem quia, distinctio eaque dolorem tenetur reiciendis quasi, natus magni quis suscipit nobis quidem placeat architecto culpa harum alias consequuntur animi.</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col col-lg-6">
-            <h3 class="section_title3">Are you still in doubt? write us</h3>
-            <form class="form" method="POST">                
-              <div class="form-items">
-                  <div class='text-field--outline'>
-                      <input class='input text-field--outline__input' type='name' id='name' name='name' required />
-                      <label class='text-field--outline__label' htmlFor='name'>name</label>
+            <div class="col col-md-5">
+              <h3 class="section_title3">are you still in doubt? write us</h3>
+              <form class="row form" method="POST">
+                  <div class="col">
+                      <div class="list-items">
+                          <div class='text-field--outline'>
+                              <input class='input text-field--outline__input' type='name' id='name' name='name' required />
+                              <label class='text-field--outline__label' htmlFor='name'>name</label>
+                          </div>
+                      </div>
                   </div>
-              </div>
-              <div class="form-items">
-                  <div class='text-field--outline'>
-                      <input class='input text-field--outline__input' type='email' id='email' name='email' required />
-                      <label class='text-field--outline__label' htmlFor='email'>email</label>
+                  <div class="col">
+                      <div class="list-items">
+                          <div class='text-field--outline'>
+                              <input class='input text-field--outline__input' type='email' id='email' name='email' required />
+                              <label class='text-field--outline__label' htmlFor='email'>email</label>
+                          </div>
+                      </div>
                   </div>
-              </div>
-              <div class="form-items">
-                  <div class='text-field--outline'>
-                      <input class='input text-field--outline__input' type='text' id='subject' name='subject' required />
-                      <label class='text-field--outline__label' htmlFor='subject'>Subject</label>
+                  <div class="col">
+                      <div class="list-items">
+                          <div class='text-field--outline'>
+                              <input class='input text-field--outline__input' type='text' id='subject' name='subject' required />
+                              <label class='text-field--outline__label' htmlFor='subject'>Subject</label>
+                          </div>
+                      </div>
+                      <div class="list-items">
+                          <div class='text-field--outline'>
+                              <textarea class='input text-field--outline__input text-field--outline__input--textarea' rows="4" id='text' name='text' required></textarea>
+                              <label class='text-field--outline__label' htmlFor='text'>text</label>
+                          </div>
+                      </div>
+                      <div class="list-items">
+                        <input type="submit" class="btn btn--refilled btn__full" value="Send Message">
+                      </div>
                   </div>
-              </div>
-              <div class="form-items">
-                  <div class='text-field--outline'>
-                      <textarea class='input text-field--outline__input text-field--outline__input--textarea' rows="4" id='text' name='text' required></textarea>
-                      <label class='text-field--outline__label' htmlFor='text'>text</label>
-                  </div>
-              </div>
-              <div class="form-items">
-                <input type="submit" class="btn btn--refilled btn__full" value="Send Message">
-              </div>
-              </div>
-            </form>
-          </div>
+                </div>
+              </form>
+            </div>  
+          </section>
         </div>
-      </div>
       </div>
     </div>
 
@@ -170,35 +192,35 @@
           <div class="col-sm-6 col-md-4 col-lg-3">
             <dl>
               <dt class="footer__title">Get in touch</dt>
-              <dd class="footer__link"><span class="material-icons">location_on</span> Calle Cabrera, No 57, Uyuni</dd>
-              <dd class="footer__link"><span class="material-icons">mail_outline</span> titans_gym@gmail.com</dd>
-              <dd class="footer__link"><span class="material-icons">phone</span> (+591)75726607</dd>
+              <dd class="footer__item"><span class="material-icons-outlined">location_on</span> Calle Cabrera, No 57, Uyuni</dd>
+              <dd class="footer__item"><span class="material-icons-outlined">mail_outline</span> titans_gym@gmail.com</dd>
+              <dd class="footer__item"><span class="material-icons-outlined">phone</span> (+591)75726607</dd>
             </dl>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
             <dl>
               <dt class="footer__title">Store Hours</dt>
-              <dd><a href="" class="footer__link">Monday - Friday : 8am - 8pm</a></dd>
-              <dd><a href="" class="footer__link">Saturday : 8am - 10pm</a></dd>
-              <dd><a href="" class="footer__link">Sunday: 8am - 11pm</a></dd>
+              <dd><a href="" class="footer__item">Monday - Friday : 8am - 8pm</a></dd>
+              <dd><a href="" class="footer__item">Saturday : 8am - 10pm</a></dd>
+              <dd><a href="" class="footer__item">Sunday: 8am - 11pm</a></dd>
             </dl>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
             <dl>
               <dt class="footer__title">Privacy Polity</dt>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor sit amet me</a></dd>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor sit amet</a></dd>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor sit</a></dd>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor sit amet</a></dd>
+              <dd><a href="" class="footer__item">Lorem ipsum dolor sit amet me</a></dd>
+              <dd><a href="" class="footer__item">Lorem ipsum dolor sit amet</a></dd>
+              <dd><a href="" class="footer__item">Lorem ipsum dolor sit</a></dd>
+              <dd><a href="" class="footer__item">Lorem ipsum dolor sit amet</a></dd>
             </dl>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
             <dl>
               <dt class="footer__title">Customer Service</dt>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor sit amet?</a></dd>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor sit </a></dd>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor sit amet</a></dd>
-              <dd><a href="" class="footer__link">Lorem ipsum dolor amet?</a></dd>
+              <dd><a href="" class="footer__item">Lorem ipsum dolor sit amet?</a></dd>
+              <dd><a href="" class="footer__item">Lorem ipsum dolor sit </a></dd>
+              <dd><a href="" class="footer__item">Lorem ipsum dolor sit amet</a></dd>
+              <dd><a href="" class="footer__item">Lorem ipsum dolor amet?</a></dd>
             </dl>
           </div>
         </div>
@@ -206,9 +228,6 @@
     </footer>
     
     <script src="js/index.js"></script>
-    <script src="js/router.js"></script>
-    <script src="js/route.js"></script>
-    <script src="js/app.js"></script>
-    </script>
+
   </body>
 </html>
