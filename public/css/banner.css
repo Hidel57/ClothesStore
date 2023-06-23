@@ -1,0 +1,73 @@
+/*
+  BANNER
+*/
+
+.banner {
+    background-color: #000;
+    color: white;
+    position: relative;
+    text-align: center; }
+    .banner__hero-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: .5;
+      object-fit: cover;
+      object-position: center; }
+    .banner-container__title {
+      position: relative;
+      height: max-content;
+      width: max-content;
+      margin: auto;
+      background-color: transparent;
+      padding: 1rem 2rem; }
+    .banner__title {
+      font-size: 3.5rem;
+      font-weight: 300;
+      line-height: 3.5rem; }
+    .banner-container__subtitle {
+      position: relative;
+      height: max-content;
+      width: max-content;
+      margin: auto;
+      background-color: #2f2f2f;
+      padding: .5rem 1rem; }
+    .banner__subtitle {
+      font-size: 1.25rem;
+      font-weight: 400;
+      line-height: 1.5rem;
+      letter-spacing: 2px;
+      text-transform: uppercase; }
+  
+  @media screen and (min-width: 576px) {
+    .banner__title {
+      font-size: 4rem;
+      line-height: 4rem; } }
+  
+  @media screen and (min-width: 768px) {
+    .banner__title {
+      font-size: 5.5rem;
+      line-height: 5.5rem; } }
+  
+  /* DEMOS */
+  .demo-banner {
+    padding-top: 4.5em;
+    padding-bottom: 5.5rem; }
+  
+  @media screen and (min-width: 768px) {
+    .demo-banner {
+      padding-top: 7rem;
+      padding-bottom: 7rem; } }
+  
+  .demo-banner-primary {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+    padding-top: 13rem;
+    padding-bottom: 16rem; }
+  
+  @media screen and (min-width: 576px) {
+    .demo-banner-primary {
+      padding-top: 11rem;
+      padding-bottom: 13rem; } }
+  
